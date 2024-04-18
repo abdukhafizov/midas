@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* .montserrat-<uniquifier> {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+  }
+   */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color:#0F0F11;
+    background-image: url(../img/bg.png);
+    background-position: right 22%;
+}
+
+.container {
+    max-width: 1382px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    height: 30px;
+    margin-top: 52px;
+}
+
+
+.ab_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 169px;
+    height: 30px;
+    background-image: url(../img/Logo.svg);
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+    a {
+        color: rgb(255, 255, 255);
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    label {
+        color: rgb(255, 255, 255);
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 12px;
+        cursor: pointer;
+    }
+
+    select {
+        width: 16px;
+        height: 14px;
+        background: rgba(255, 255, 255, 0);
+        color: white;
+        border: none;
+    }
+
+    span {
+        display: flex;
+    }
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.about_boxes {
+    display: flex;
+    justify-content: space-between;
+    /* align-items:baseline; */
+    gap: 68px;
+
+    margin-top: 51px;
+}
+
+.delivery_ab {
+    width: 312px;
+    height: 98px;
+
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.phone_numb {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.ab_left {
+    position: relative;
+    margin-top: 50px;
+}
+
+.abdolute_puints {
+    position: absolute;
+    left: -27px;
+    top: 160px;
+    width: 120px;
+    height: 184px;
+    background-image: url(../img/Union.svg);
+}
+
+.phone_numb {
+    position: absolute;
+    top: 415px;
+    text-decoration: none;
+}
+
+.delivery_mail {
+    position: absolute;
+    top: 450px;
+}
+
+
+
+.delivery_mail {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* .ab_salmon{
+    width: 355.24px;
+height: 357.93px;
+} */
+
+.ab_right {
+    position: relative;
+}
+
+.ab_right img {
+    margin-left: 34px;
+
+}
+
+.ab_salmon {
+    background-image: url(../img/red_bg.svg);
+    width: 355.24px;
+    height: 357.93px;
+    padding: 14px 50px;
+
+    position: absolute;
+    left: 130px;
+    bottom: -112px;
+}
+
+.ab_dish {
+    width: 210px;
+    height: 60px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 34px;
+}
+
+.text_of_salmon {
+    width: 210px;
+    height: 103px;
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px;
+}
+
+.weight {
+    width: 47px;
+    height: 20px;
+    border-radius: 3px;
+    background: rgb(255 255 255 / 33%);
+
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.p_w_bs {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    /* width: 50px; */
+    height: 80px;
+    margin-top: -10px;
+}
+
+.p_w_bs img {
+
+    margin-left: 0;
+}
+
+.p_w_bs p {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 23px;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.bigger_union {
+    background-image: url(../img/bigger_union.svg);
+    width: 250px;
+    height: 364px;
+
+    position: absolute;
+    left: 82%;
+    right: -5.69%;
+    top: 72.66%;
+    bottom: 68.38%;
+}
+
+#ab_tiramisu {
+    width: 0;
+    height: 0;
+}
+
+.daily_dish {
+    /* display: flex; */
+    flex-direction: column;
+    position: relative;
+    margin-top: 50px;
+}
+
+.photoOftiramisu {
+    background-image: url(../img/tiramisu.svg);
+    width: 264px;
+    height: 262px;
+
+    position: absolute;
+    left: 12px;
+}
+
+
+#p_w_bs_tirami {
+    margin-top: 10px;
+}
+
+#tira_w {
+    margin-top: 5px;
+}
+
+.not_abs_tr {
+    position: absolute;
+    top: 220px;
+}
+
+.popular_dishes {
+    margin-top: 300px;
+
+
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 90px;
+    text-align: left;
+    margin-left: 35%;
+
+    width: 643px;
+}
+
+.dish {
+    width: 210px;
+}
+
+.about_popular_dishes {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px
+}
+
+.ab_menu {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px;
+
+    img {
+        height: 310px;
+    }
+}
+
+.menu {
+    margin-bottom: 170px;
+}
+
+.sales {
+    background-color: #B70000;
+    height: 283px;
+    position: relative;
+
+    p {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+
+        position: absolute;
+        left: 55px;
+        top: 100px;
+    }
+}
+
+.sales img {
+    position: absolute;
+    top: -11px;
+}
+
+#dish_of_menu {
+    margin-bottom: 10px;
+}
+
+
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.ab_footer {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    padding-top: 30px;
+}
+
+footer {
+    height: 190px;
+    background-color: black;
+
+    a {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 15px;
+    }
+
+    .left_of_top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: end;
+        gap: 20px;
+    }
+
+    .right_of_top {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    #top_numb {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        text-decoration: none;
+    }
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: rgb(255, 255, 255);
+    ;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bottom_txt {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.menu_box {
+    background: #000;
+    /* width: 233px; */
+    height: 283px;
+    position: relative;
+    transition: 1s;
+    overflow: hidden;
+    /* background-image: url(../img/dishes/Mask\ Group\ \(1\).svg); */
+
+    img {
+        position: absolute;
+        top: -14px;
+        bottom: 0;
+    }
+}
+
+.menu_txt {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+
+    position: absolute;
+    bottom: 140px;
+}
+#hot a{
+    left: 27px;
+}
+
+#soups a{
+    left: 75px;
+}
+
+#khin a{
+    left: 62px;
+}
+
+#cold a{
+    text-align: center;
+    left: 50px;
+    top: 39%;
+}
+
+#sal a{
+    left: 65px;
+}
+
+
+.menu_box:hover {
+    transform: scale(1.1);
+
+    background: rgb(9, 35, 78);
+}
