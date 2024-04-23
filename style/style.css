@@ -14,7 +14,7 @@
 
 body {
     margin: 0;
-    background-color:#0F0F11;
+    background-color: #0F0F11;
     background-image: url(../img/bg.png);
     background-position: right 22%;
 }
@@ -53,6 +53,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 50px;
+    position: relative;
 
     a {
         color: rgb(255, 255, 255);
@@ -62,6 +63,7 @@ header {
         font-style: normal;
         font-size: 12px;
         text-decoration: none;
+        transition: 1s;
     }
 
     label {
@@ -72,6 +74,8 @@ header {
         font-style: normal;
         font-size: 12px;
         cursor: pointer;
+        transition: 1s;
+        margin-right: 5px;
     }
 
     select {
@@ -84,6 +88,17 @@ header {
 
     span {
         display: flex;
+
+    }
+
+    a:hover {
+        color: #FBD13E;
+        transition: 1s;
+    }
+
+    label:hover {
+        color: #FBD13E;
+        transition: 1s;
     }
 }
 
@@ -165,7 +180,7 @@ height: 357.93px;
 }
 
 .ab_right img {
-    margin-left: 34px;
+    margin-left: 10px;
 
 }
 
@@ -181,8 +196,7 @@ height: 357.93px;
 }
 
 .ab_dish {
-    width: 210px;
-    height: 60px;
+
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 25px;
@@ -192,8 +206,8 @@ height: 357.93px;
 }
 
 .text_of_salmon {
-    width: 210px;
-    height: 103px;
+    /* width: 210px;
+    height: 103px; */
     color: rgb(255, 255, 255);
     font-family: Montserrat;
     font-size: 15px;
@@ -244,7 +258,7 @@ height: 357.93px;
     height: 364px;
 
     position: absolute;
-    left: 82%;
+    left: 80%;
     right: -5.69%;
     top: 72.66%;
     bottom: 68.38%;
@@ -304,7 +318,7 @@ h1 {
 }
 
 .dish {
-    width: 210px;
+    width: 180px;
 }
 
 .about_popular_dishes {
@@ -456,25 +470,26 @@ footer {
     position: absolute;
     bottom: 140px;
 }
-#hot a{
+
+#hot a {
     left: 27px;
 }
 
-#soups a{
+#soups a {
     left: 75px;
 }
 
-#khin a{
+#khin a {
     left: 62px;
 }
 
-#cold a{
+#cold a {
     text-align: center;
     left: 50px;
     top: 39%;
 }
 
-#sal a{
+#sal a {
     left: 65px;
 }
 
@@ -483,4 +498,36 @@ footer {
     transform: scale(1.1);
 
     background: rgb(9, 35, 78);
+}
+
+
+.hot_arrow_box, .blackBox {
+    width: 200px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    z-index: 999;
+    top: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    overflow: auto;
+
+    padding: 10px 20px;
+    transition: 1s;
+
+    a {
+        color: rgb(255, 255, 255);
+        font-family: Montserrat;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+}
+
+.hidden{
+    display: none;
+    background-image: url(../img/massiveDishes/Mask\ Group-1.svg);
 }

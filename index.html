@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MIDAS</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="shortcut icon" href="./img/short_logo.svg" />
 </head>
@@ -19,12 +19,16 @@
                     <div class="center">
                         <a href="#">Акции</a>
                         <span>
-                            <label for="hot">Горячее</label>
-                            <select id="hot"></select>
+                            <label class="first_hot_click" for="hot">Горячее</label>
+                            <img src="./img/arrow.svg" id="hot_arrow" alt="">
+                            <div class="hot_arrow_box hidden">
+                                 
+                            </div>
                         </span>
                         <span>
                             <label for="cold">Холодное</label>
-                            <select id="cold"></select>
+                            <img src="./img/arrow.svg" alt="">
+                            <!-- <select id="cold"></select> -->
                         </span>
 
                         <a href="#">Свежая выпечка</a>
@@ -105,7 +109,7 @@
         <div class="container">
             <h1>Популярные блюда</h1>
             <div class="about_popular_dishes">
-                <div class="dish">
+                <!-- <div class="dish">
                     <img src="./img/khachapuri.svg" alt="">
                     <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
                     <div class="weight">430 г</div>
@@ -117,149 +121,7 @@
                         <img src="./img/basket.svg" alt="">
                     </span>
                 </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
-
-                <div class="dish">
-                    <img src="./img/khachapuri.svg" alt="">
-                    <h2 class="ab_dish" id="dish_of_menu">Хачапури по-аджарски</h2>
-                    <div class="weight">430 г</div>
-                    <p class="text_of_salmon">
-                        Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
-                    </p>
-                    <span class="p_w_bs">
-                        <p class="price">470 ₽</p>
-                        <img src="./img/basket.svg" alt="">
-                    </span>
-                </div>
+             -->
 
             </div>
 
