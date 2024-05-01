@@ -106,6 +106,8 @@ header {
     display: flex;
     align-items: center;
     gap: 40px;
+
+    position: relative;
 }
 
 .about_boxes {
@@ -113,8 +115,8 @@ header {
     justify-content: space-between;
     /* align-items:baseline; */
     gap: 68px;
-
     margin-top: 51px;
+    position: relative;
 }
 
 .delivery_ab {
@@ -258,7 +260,7 @@ height: 357.93px;
     height: 364px;
 
     position: absolute;
-    left: 80%;
+    left: 83%;
     right: -5.69%;
     top: 72.66%;
     bottom: 68.38%;
@@ -282,7 +284,7 @@ height: 357.93px;
     height: 262px;
 
     position: absolute;
-    left: 12px;
+    left: -25px;
 }
 
 
@@ -319,6 +321,7 @@ h1 {
 
 .dish {
     width: 180px;
+    position: relative;
 }
 
 .about_popular_dishes {
@@ -386,6 +389,7 @@ h1 {
 }
 
 footer {
+
     height: 190px;
     background-color: black;
 
@@ -449,7 +453,7 @@ footer {
     /* width: 233px; */
     height: 283px;
     position: relative;
-    transition: 1s;
+    transition: 0.5s;
     overflow: hidden;
     /* background-image: url(../img/dishes/Mask\ Group\ \(1\).svg); */
 
@@ -501,7 +505,8 @@ footer {
 }
 
 
-.hot_arrow_box, .blackBox {
+.hot_arrow_box,
+.blackBox {
     width: 200px;
     height: 300px;
     background-color: rgb(0, 0, 0);
@@ -527,7 +532,88 @@ footer {
     }
 }
 
-.hidden{
+.hidden {
     display: none;
     background-image: url(../img/massiveDishes/Mask\ Group-1.svg);
+}
+
+
+.inshoper {
+    width: 33px;
+    height: 33px;
+
+    position: absolute;
+    left: 93px;
+    top: 87%;
+    background-color: #fbd13e;
+    background-image: url(../img/add-to-basket.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+.text_of_salmon {
+    height: 100px;
+    overflow: auto;
+}
+
+#dish_of_menu {
+    width: 190px;
+    height: 95px;
+
+    font-size: 21px;
+}
+
+.basket_counter {
+    width: 21px;
+    height: 17px;
+    border: 2px solid rgb(15, 15, 17);
+    border-radius: 3px;
+    background: rgb(251, 209, 62);
+
+    position: absolute;
+    left: 114px;
+    bottom: 16px;
+
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: center;
+}
+
+.ab_dailyDish {
+    position: relative;
+}
+
+
+
+
+h4 {
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    
+}
+
+#tab_active {
+    color: rgb(158, 162, 170);
+}
+
+.tabs {
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: 500;
+
+    color: rgb(255, 255, 255);
+}
+
+.grids_of_hot_dishes_slide{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 20px
 }
