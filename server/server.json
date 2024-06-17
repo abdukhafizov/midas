@@ -1,0 +1,514 @@
+{
+  "dishes": [
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/khachapuri.svg",
+      "bigImg": "https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook",
+      "name": "Khachapuri in Adjarian",
+      "title": "Хачапури 'Лодочка' с начинкой из расплавленного сыра сулугуни, яйца и масла.",
+      "weight": 430,
+      "price": 470,
+      "basket": false,
+      "status": true,
+      "category": "khinkali",
+      "count": 0,
+      "Varieties": [
+        {
+          "name": "C сыром",
+          "menuImg": "../img/massiveDishes/khachapuri.svg",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Традиционные",
+          "menuImg": "../img/massiveDishes/khachapuri.svg",
+          "price": 115,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Из баранины с тархуном",
+          "menuImg": "../img/massiveDishes/khachapuri.svg",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/traditional.svg",
+      "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
+      "name": "Хинкали традиционные",
+      "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 495,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/FriedKhinkali.svg",
+      "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
+      "name": "Хинкали жаренные (6шт)",
+      "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/Low-calorieLunchWithYogurt.svg",
+      "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
+      "name": "Ланч низко-калорийный",
+      "title": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
+      "weight": 450,
+      "price": 1148,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "salad"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/KhachapuriInMegrelian.svg",
+      "bigImg": "https://hip2go.ru/penza/api2/images/IikoProducts633/199e8a670d-1_1000x.jpg",
+      "name": "Хачапури по-мегрельски",
+      "title": "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
+      "weight": 430,
+      "price": 490,
+      "basket": false,
+      "count": 0,
+      "status": false,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
+      "bigImg": "https://ferum55.ru/wp-content/uploads/2021/05/bifshteks-solsberi-s-fermerskim-kartofelem-.jpg",
+      "name": "Котлета с картофелем",
+      "title": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "count": 0,
+      "status": true,
+      "category": "hot",
+      "Varieties": [
+        {
+          "name": "C сыром",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Традиционные",
+          "price": 115,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Из баранины с тархуном",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/MaskGroup.svg",
+      "bigImg": "https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook",
+      "name": "Khachapuri in Adjarian",
+      "title": "Хачапури Лодочка с начинкой из расплавленного сыра сулугуни, яйца и масла.",
+      "weight": 430,
+      "price": 470,
+      "basket": false,
+      "status": true,
+      "count": 0,
+      "category": "khinkali",
+      "Varieties": [
+        {
+          "name": "C сыром",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Традиционные",
+          "price": 115,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Из баранины с тархуном",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/MaskGroup-1.svg",
+      "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
+      "name": "Хинкали традиционные",
+      "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 495,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/MaskGroup-2.svg",
+      "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
+      "name": "Хинкали жаренные (6шт)",
+      "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями. ",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/MaskGroup-3.svg",
+      "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
+      "name": "Ланч низко-калорийный",
+      "title": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
+      "weight": 450,
+      "price": 1148,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "salad"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/MaskGroup-4.svg",
+      "bigImg": "https://hip2go.ru/penza/api2/images/IikoProducts633/199e8a670d-1_1000x.jpg",
+      "name": "Хачапури по-мегрельски",
+      "title": "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
+      "weight": 430,
+      "price": 490,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
+      "bigImg": "https://ferum55.ru/wp-content/uploads/2021/05/bifshteks-solsberi-s-fermerskim-kartofelem-.jpg",
+      "name": "Котлета с картофелем",
+      "title": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "status": true,
+      "count": 0,
+      "category": "hot",
+      "Varieties": [
+        {
+          "name": "C сыром",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Традиционные",
+          "price": 115,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Из баранины с тархуном",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "hot": [
+    {
+      "id": 0.49290090903956707,
+      "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
+      "bigImg": "https://ferum55.ru/wp-content/uploads/2021/05/bifshteks-solsberi-s-fermerskim-kartofelem-.jpg",
+      "name": "Котлета с картофелем",
+      "title": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "status": true,
+      "count": 0,
+      "category": "hot",
+      "Varieties": [
+        {
+          "name": "C сыром",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Традиционные",
+          "price": 115,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Из баранины с тархуном",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": 0.47046260709433296,
+      "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
+      "bigImg": "https://ferum55.ru/wp-content/uploads/2021/05/bifshteks-solsberi-s-fermerskim-kartofelem-.jpg",
+      "name": "Котлета с картофелем",
+      "title": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "status": true,
+      "count": 0,
+      "category": "hot",
+      "Varieties": [
+        {
+          "name": "C сыром",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Традиционные",
+          "price": 115,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Из баранины с тархуном",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        }
+      ]
+    }
+  ],
+  "khinkali": [
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/khachapuri.svg",
+      "bigImg": "https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook",
+      "name": "Khachapuri in Adjarian",
+      "title": "Хачапури 'Лодочка' с начинкой из расплавленного сыра сулугуни, яйца и масла.",
+      "weight": 430,
+      "price": 470,
+      "basket": false,
+      "status": true,
+      "count": 0,
+      "category": "khinkali",
+      "Varieties": [
+        {
+          "name": "C сыром",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Традиционные",
+          "price": 115,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Из баранины с тархуном",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/traditional.svg",
+      "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
+      "name": "Хинкали традиционные",
+      "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 495,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/FriedKhinkali.svg",
+      "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
+      "name": "Хинкали жаренные (6шт)",
+      "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/KhachapuriInMegrelian.svg",
+      "bigImg": "https://hip2go.ru/penza/api2/images/IikoProducts633/199e8a670d-1_1000x.jpg",
+      "name": "Хачапури по-мегрельски",
+      "title": "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
+      "weight": 430,
+      "price": 490,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/MaskGroup.svg",
+      "bigImg": "https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook",
+      "name": "Khachapuri in Adjarian",
+      "title": "Хачапури Лодочка с начинкой из расплавленного сыра сулугуни, яйца и масла.",
+      "weight": 430,
+      "price": 470,
+      "basket": false,
+      "status": true,
+      "count": 0,
+      "category": "khinkali",
+      "Varieties": [
+        {
+          "name": "C сыром",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Традиционные",
+          "price": 115,
+          "weight": 80,
+          "count": 0
+        },
+        {
+          "name": "Из баранины с тархуном",
+          "price": 125,
+          "weight": 80,
+          "count": 0
+        }
+      ]
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/MaskGroup-1.svg",
+      "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
+      "name": "Хинкали традиционные",
+      "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 495,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/MaskGroup-2.svg",
+      "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
+      "name": "Хинкали жаренные (6шт)",
+      "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями. ",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    },
+    {
+      "id": "Math.random()",
+      "menuImg": "../img/massiveDishes/MaskGroup-4.svg",
+      "bigImg": "https://hip2go.ru/penza/api2/images/IikoProducts633/199e8a670d-1_1000x.jpg",
+      "name": "Хачапури по-мегрельски",
+      "title": "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
+      "weight": 430,
+      "price": 490,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "khinkali"
+    }
+  ],
+  "total_basket": [
+    {
+      "0": {
+        "id": "Math.random()",
+        "menuImg": "../img/massiveDishes/FriedKhinkali.svg",
+        "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
+        "name": "Хинкали жаренные (6шт)",
+        "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями.",
+        "weight": 350,
+        "price": 520,
+        "basket": false,
+        "status": false,
+        "count": 2,
+        "category": "khinkali"
+      },
+      "1": {
+        "id": "Math.random()",
+        "menuImg": "../img/massiveDishes/Low-calorieLunchWithYogurt.svg",
+        "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
+        "name": "Ланч низко-калорийный",
+        "title": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
+        "weight": 450,
+        "price": 1148,
+        "basket": false,
+        "status": false,
+        "count": 1,
+        "category": "salad"
+      },
+      "2": {
+        "id": "Math.random()",
+        "menuImg": "../img/massiveDishes/MaskGroup-3.svg",
+        "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
+        "name": "Ланч низко-калорийный",
+        "title": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
+        "weight": 450,
+        "price": 1148,
+        "basket": false,
+        "status": false,
+        "count": 1,
+        "category": "salad"
+      },
+      "3": {
+        "id": "Math.random()",
+        "menuImg": "../img/massiveDishes/MaskGroup-1.svg",
+        "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
+        "name": "Хинкали традиционные",
+        "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+        "weight": 350,
+        "price": 495,
+        "basket": false,
+        "status": false,
+        "count": 1,
+        "category": "khinkali"
+      },
+      "id": "7a7d"
+    }
+  ]
+}

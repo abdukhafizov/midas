@@ -15,7 +15,9 @@
         <header>
             <div class="container">
                 <div class="ab_header">
-                    <div class="logo"></div>
+                    <a href="./index.html">
+                        <div class="logo"></div>
+                    </a>
                     <div class="center">
                         <a href="#">🔥 Акции</a>
                         <span>
@@ -33,7 +35,7 @@
 
                         <a href="#">Свежая выпечка</a>
                         <a href="#">Десерты</a>
-                        <a href="#">Напитки</a>
+                        <a href="./pages/basket.html">Напитки</a>
                     </div>
                     <div class="right">
                         <a href="#">
@@ -42,7 +44,7 @@
                         <a href="#">
                             <img src="./img/acc.svg" alt="">
                         </a>
-                        <a href="#">
+                        <a href="#" id="basketLink">
                             <img src="./img/shoper.svg" alt="">
                         </a>
                         <div class="basket_counter hidden">0</div>
@@ -77,7 +79,7 @@
                             </p>
                             <span class="p_w_bs">
                                 <p class="price">1 200 ₽</p>
-                                <img src="./img/basket.svg" alt="">
+                                <img id="pwImg" src="./img/basket.svg" alt="">
                             </span>
                         </div>
                     </div>
@@ -134,6 +136,37 @@
         </div>
     </section>
 
+    <div class="parent_modal hide">
+        <div class="modal_of_species">
+            <div class="container">
+                <div class="top_fo_theModal">
+                    <button class="exit"></button>
+                    <h5>Виды:</h5>
+                </div>
+                <div class="modal_blocks">
+
+                    <!-- <div class="modal_block">
+                        <span class="titleWithWeight">
+                            <p class="ab_dish">C сыром</p>
+                            <div class="weight">430 г</div>
+                        </span>
+                        <div class="count">
+                            <div class="top_count_style"></div>
+                            <div class="center"> <span id="minus">-</span> <span id="modal_numb">1шт</span> <span id="plus">+</span></div>
+                            <div class="bottom_count_style"></div>
+                        </div>
+                        
+                        <span class="p_w_bs">
+                            <p class="price">470 ₽</p>
+                            <img src="./img/basket.svg" alt="">
+                        </span>
+                    </div>
+          -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="menu">
         <div class="container">
             <h1>Меню</h1>
@@ -152,7 +185,7 @@
                 </div>
                 <div class="menu_box" id="khin">
                     <img src="./img/dishes/khinkali.svg" alt="">
-                    <a href="#" class="menu_txt">Хинкали</a>
+                    <a href="./pages/khinkals.html" class="menu_txt">Хинкали</a>
                 </div>
                 <div class="menu_box" id="cold">
                     <img src="./img/dishes/cold.svg" alt="">
@@ -204,6 +237,64 @@
         </div>
     </footer>
 
+    <div class="parent_basket_modal">
+        <section class="basket_modal">
+            <!-- <div class="container"> -->
+            <div class="head_of_basket">
+                <span id="close_basket">✖</span>
+                <h5>Корзина</h5>
+            </div>
+            <div class="about_basket_modal">
+                <!-- -------------- -->
+                <div class="box_of_products_in_basket">
+                    <!-- <div class="product">
+                        <div class="left_of_product">
+                            <img src="./img/massiveDishes/khachapuri.svg" alt="">
+                            <span>
+                                <p class="nameOfProduct">Хинкали</p>
+                                <div class="weight">430 г</div>
+                            </span>
+                        </div>
+                        <div class="right_of_product">
+                            <div class="count" id="countOfBasket">
+                                <div class="top_count_style"></div>
+                                <div class="center" id="centerBasket">
+                                    <span id="minus">-</span>
+                                    <span id="modal_numb">1шт</span>
+                                    <span id="plus">+</span>
+                                </div>
+                                <div class="bottom_count_style"></div>
+                            </div>
+                            <p class="price" id="priceOfBasket">470 ₽</p>
+                        </div>
+                    </div> -->
+
+                    <h6 id="emptyShopper">Ваша корзина пуста :( </h6>
+                </div>
+
+                <!-- ------- -->
+
+                <div class="totalBlock">
+                    <div class="count-price">
+                        <div class="all-count">
+                            <p class="all-count-p">Всего блюд:</p>
+                            <p class="all-count-number">0</p>
+                        </div>
+                        <div class="all-price">
+                            <p class="all-price-p">Общая цена:</p>
+                            <p class="all-price-number">0</p>
+                        </div>
+                    </div>
+                    <button class="total">Заказать</button>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+    </div>
+    <!-- <button id="click">click</button>`
+            <button id="clock">clock</button>` -->
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script/script.js"></script>
 </body>
 
