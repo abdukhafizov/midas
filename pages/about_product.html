@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIDAS</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="shortcut icon" href="./img/short_logo.svg" />
+    <link rel="shortcut icon" href="../img/short_logo.svg" />
 </head>
 
 <body>
@@ -43,7 +44,7 @@
                     <a href="#">
                         <img src="../img/acc.svg" alt="">
                     </a>
-                    <a href="#">
+                    <a href="#" id="basketLink">
                         <img src="../img/shoper.svg" alt="">
                     </a>
                     <div class="basket_counter hidden">0</div>
@@ -55,19 +56,80 @@
     <section class="about_product">
         <div class="container">
             <div class="about_product_slide">
-                <h4>Хинкали</h4>
-                <!-- <p class="tabs">Главная / <span id="tab_active">О продукте</span> </p> -->
+                <!-- <h4 id="nameOfProduct">Хинкали</h4>
+                <p class="tabs">Главная / <span id="tab_active">О продукте</span> </p> -->
 
                 <div class="grids_of_aboutProduct_slide">
 
-                    <div class="left_aboutProduct">
-                        <img src="https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook" alt="">
+                    <!-- <div class="left_aboutProduct">
+                        <img src="https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook"
+                            alt="">
                         <span class="block_of_points"></span>
-                    </div>
+                    </div> -->
                     <!-- <div class="inshoper"></div> -->
+                    <!-- <div class="right_aboutProduct">
+                        <div class="modal_blocks" id="AbMdBlocks">
+                            <p class="top_title_AbPr" id="speciesAbPr">РАЗНОВИДНОСТЬ:</p>
+                            <div class="modal_block" id="AbMdBlock">
+                                <span class="titleWithWeight">
+                                    <p class="ab_dish">C сыром</p>
+                                    <div class="weight">430 г</div>
+                                </span>
+                                <div class="count">
+                                    <div class="top_count_style"></div>
+                                    <div class="center"> <span id="minus">-</span> <span id="modal_numb">1шт</span>
+                                        <span id="plus">+</span>
+                                    </div>
+                                    <div class="bottom_count_style"></div>
+                                </div>
 
-
+                                <span class="p_w_bs">
+                                    <p class="price">470 ₽</p>
+                                    <img src="../img/basket.svg" alt="">
+                                </span>
+                            </div>
+                        </div>
+                        <p class="top_title_AbPr">ОПИСАНИЕ:</p>
+                        <p id="descriptionOfProduct">
+                            Плотно-шелковые хинкали с сочной начинкой на выбор: из фермерской говядины, сыра моцарелла
+                            либо фермерской баранины и экологически чистой зелени
+                        </p>
+                    </div> -->
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="qwer">
+        <div class="container">
+            <h3>С этим блюдом часто заказывают:</h3>
+            <div class="swiperParentBlock">
+
+                <div class="swiper mySwiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <!-- <div class="swiper-slide">
+                            <div class="dish">
+                                <img src="../img/khachapuri.svg" alt="">
+                                <h2 class="ab_dish" id="dish_of_recomendation">Хачапури по-аджарски</h2>
+                                <div class="weight">430 г</div>
+                                <p class="text_of_salmon">
+                                    Хачапури "Лодочка" с начинкой из расплавленного сыра сулугуни, яйца и масла.
+                                </p>
+                                <span class="p_w_bs">
+                                    <p class="price">470 ₽</p>
+                                    <img src="../img/basket.svg" alt="">
+                                </span>
+                            </div>
+                        </div> -->
+
+                    
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -107,7 +169,63 @@
         </div>
     </footer>
 
-    <script src="../script/khinkals.js"></script>
+    <div class="parent_basket_modal">
+        <section class="basket_modal">
+            <!-- <div class="container"> -->
+            <div class="head_of_basket">
+                <span id="close_basket">✖</span>
+                <h5>Корзина</h5>
+            </div>
+            <div class="about_basket_modal">
+                <!-- -------------- -->
+                <div class="box_of_products_in_basket">
+                    <!-- <div class="product">
+                        <div class="left_of_product">
+                            <img src="./img/massiveDishes/khachapuri.svg" alt="">
+                            <span>
+                                <p class="nameOfProduct">Хинкали</p>
+                                <div class="weight">430 г</div>
+                            </span>
+                        </div>
+                        <div class="right_of_product">
+                            <div class="count" id="countOfBasket">
+                                <div class="top_count_style"></div>
+                                <div class="center" id="centerBasket">
+                                    <span id="minus">-</span>
+                                    <span id="modal_numb">1шт</span>
+                                    <span id="plus">+</span>
+                                </div>
+                                <div class="bottom_count_style"></div>
+                            </div>
+                            <p class="price" id="priceOfBasket">470 ₽</p>
+                        </div>
+                    </div> -->
+
+                    <h6 id="emptyShopper">Ваша корзина пуста :( </h6>
+                </div>
+                <!-- ------- -->
+
+                <div class="totalBlock">
+                    <div class="count-price">
+                        <div class="all-count">
+                            <p class="all-count-p">Всего блюд:</p>
+                            <p class="all-count-number">0</p>
+                        </div>
+                        <div class="all-price">
+                            <p class="all-price-p">Общая цена:</p>
+                            <p class="all-price-number">0</p>
+                        </div>
+                    </div>
+                    <button class="total">Заказать</button>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../script/abProd.js"></script>
 </body>
 
 </html>

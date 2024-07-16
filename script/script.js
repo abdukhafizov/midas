@@ -97,9 +97,12 @@ let basket = {
     ],
 }
 
+//---ЛОКАЛ СТРЕЙДЖ 
+
 if(typeof localStorage.getItem('basket') === 'string'){
     basket.dish = JSON.parse(localStorage.getItem('basket'))
 }
+//---------
 console.log(basket);
 exit.onclick = () => {
     parent_modal.classList.add("hide")
@@ -172,7 +175,7 @@ function reload(arr) {
 
         first_img.src = item.menuImg
         sec_img.src = "../img/basket.svg"
-        ab_dish.href = "../pages/about_product.html"
+        
 
         ab_dish.innerHTML = item.name
         weight.innerHTML = item.weight + "г"
@@ -201,7 +204,7 @@ function reload(arr) {
                 all_count_n.innerHTML = num + 1
                 basket.dish.push(item);
                 ModalBasket(basket.dish, box_of_products_in_basket)
-                emptyShopper.classList.add("hidden")
+                // emptyShopper.classList.add("hidden")
                 localStorage.setItem("basket", JSON.stringify(basket.dish))
 
             } else {
@@ -209,7 +212,7 @@ function reload(arr) {
                 all_count_n.innerHTML = num - 1
                 basket.dish.splice(basket.dish.indexOf(item), 1)
                 ModalBasket(basket.dish, box_of_products_in_basket)
-                emptyShopper.classList.remove("hidden")
+                // emptyShopper.classList.remove("hidden")
 
             }
             console.log(basket.dish);
@@ -242,18 +245,23 @@ function reload(arr) {
         }
         // console.log(item);
 
-
+        ab_dish.addEventListener("click", () =>{
+            window.location.href = `/pages/about_product.html?id=${item.id}`
+        })
     }
 }
 
 
 
 //создание элементов в вариациях еды 
-function modalRel(arr) {
+function modalRel(obj) {
+    
     let modal_blocks = document.querySelector(".modal_blocks")
-
-    for (let item of arr[0].Varieties) {
-
+    for (let item of obj[0].Varieties) {
+console.log(obj[0].Varieties);
+//оно берет не весь массив а только вариаци
+//оно видимо берет именно вариации от первого массива
+        
         let modal_block = document.createElement("div")
         let titleWithWeight = document.createElement("span")
         let ab_dish = document.createElement("p")
@@ -353,13 +361,13 @@ function modalRel(arr) {
 
         }
 
-        // countlenght = basket.dish.length
-        // all_count_n.innerHTML = countlenght
         console.log();
-
-
-
-
+        
+        
+        
+        
+        countlenght = basket.dish.length
+        all_count_n.innerHTML = countlenght
     }
 }
 
@@ -384,8 +392,9 @@ basketLink.onclick = () => {
 
 
 basket_counter.classList.remove("hidden")
+
 let num = basket.dish.length
-num = basket_counter.innerHTML
+basket_counter.innerHTML = num
 
 close_basket.onclick = () => {
     parent_basket_modal.classList.remove("open")
@@ -488,7 +497,7 @@ function ModalBasket(arr, place) {
 
             if (item.count <= 0) {
                 item.count = 0
-            } else {
+            }else {
                 item.count -= 1
                 modal_numb.innerHTML = item.count + "шт"
 
@@ -504,12 +513,28 @@ function ModalBasket(arr, place) {
                 allPriceNumb.textContent = Math.abs(total_price) + "₽";
             }
 
+
+           
         }
+
+ 
+     
+        total_price = 0
+        let t = 0
+        let allPriceNumb = document.querySelector(".all-price-number")
+
+        for (let i of basket.dish) {
+            t = (i.count * i.price)
+            total_price = t + total_price
+        }
+        allPriceNumb.textContent = total_price + "₽"
 
         item.count = 1
         modal_numb.innerHTML = item.count + 0 + "шт"
 
     }
+
+    //---ПРОВЕРКА НА ИДЕНЧИНОСТЬ
     const fUBK = (arr,key) => {
             const seen = new Set()
             return arr.filter(item =>{
@@ -528,10 +553,11 @@ let total = document.querySelector(".total")
 
 total.addEventListener( "click", () => {
     window.location.href = `${window.location.origin}/pages/basket.html`
-
-    axios.post("http://localhost:3002/total_basket",
-JSON.stringify(basket.dish)
-    )
+    for(let item of basket.dish){
+        axios.post("http://localhost:3002/total_basket",
+        item)
+    }
+   
 })
 
 let basketRend = function(){
@@ -546,8 +572,20 @@ let basketRend = function(){
 window.onload = function(){
     let numb = basket.dish.length
     numb = basket_counter.innerHTML
-
 }
+
+
+
+let aside = document.querySelector("aside")
+
+window.addEventListener("load", () =>{
+    console.log("123");
+    aside.classList.add("hide")
+    setTimeout(() => {
+        aside.remove()
+    }, 2000)
+})
+
 
 
 //----
@@ -583,3 +621,29 @@ window.onload = function(){
 // console.log(uniqueItems);
 
 
+//patch and get
+
+// btn.onclick = () => {
+//     axios.get("http://localhost:3002/dishes")
+//     .then(res =>{
+//         let data = res.data
+ 
+//         console.log(data);
+
+
+//     })
+
+// }
+
+
+// secBtn.onclick = () =>{
+//     axios.get("http://localhost:3002/total_basket")
+//     .then(res => {
+//         let data = res.data
+    
+//         console.log(data);
+    
+//         axios.put("http://localhost:3002/dishes", data)
+//     })
+
+// }

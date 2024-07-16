@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MIDAS</title>
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="shortcut icon" href="./img/short_logo.svg" />
+    <link rel="shortcut icon" href="../img/short_logo.svg" />
 </head>
 
 <body>
@@ -57,16 +57,37 @@
             <div class="boxes_of_hot_dished_slide">
                 <h4>Корзина</h4>
                 <p class="tabs">Главная / <span id="tab_active">Корзина</span> </p>
+                <!-- <div class="dishesOfBasket">
+                    <button class="btn">click</button>
+                    <button class="secBtn">clock</button>
+                </div> -->
 
-                <div class="th_top">
-                    <p class="topTxt">Блюдо:</p>
-                    <p class="topTxt">Цена:</p>
-                    <p class="topTxt">Кол-во:</p>
-                    <p class="topTxt">Сумма:</p>
+                <div class="header_b">
+                    <span id="dish_b_head">Блюдо:</span>
+                    <span>Цена:</span>
+                    <span id="countOftitle">Кол-во:</span>
+                    <span id="amount_tbt">Сумма:</span>
                 </div>
-
-                <div class="dishesOfBasket">
-                    
+                <div class="menuTotalBasket">
+                    <!-- <div class="item">
+                        <img src="../img/massiveDishes/KhachapuriInAdjarian.svg" alt="Хачапури по-аджарски">
+                        <div class="description">
+                            <p class="nameOfProduct">Хинкали</p>
+                            <div class="weight">430 г</div>
+                        </div>
+                        <p class="price price_basket" id="priceOfBasket">470 ₽</p>
+                        <div class="count" id="countOfTotalBas">
+                            <div class="top_count_style"></div>
+                            <div class="center" id="centerBasket">
+                                <span id="minus">-</span>
+                                <span id="modal_numb">1шт</span>
+                                <span id="plus">+</span>
+                            </div>
+                            <div class="bottom_count_style"></div>
+                        </div>
+                        <p class="price price_basket" id="priceOfBasket">470 ₽</p>
+                    </div> -->
+                    <!-- Repeat for each item -->
                 </div>
 
             </div>
@@ -108,7 +129,7 @@
         </div>
     </footer>
 
-    <script async src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../script/basket.js"></script>
 </body>
 

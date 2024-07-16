@@ -1,7 +1,7 @@
 {
   "dishes": [
     {
-      "id": "Math.random()",
+      "id": "1",
       "menuImg": "../img/massiveDishes/khachapuri.svg",
       "bigImg": "https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook",
       "name": "Khachapuri in Adjarian",
@@ -37,20 +37,20 @@
       ]
     },
     {
-      "id": "Math.random()",
+      "id": "2",
       "menuImg": "../img/massiveDishes/traditional.svg",
       "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
       "name": "Хинкали традиционные",
       "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
       "weight": 350,
-      "price": 495,
+      "price": 1000,
       "basket": false,
       "status": false,
       "count": 0,
       "category": "khinkali"
     },
     {
-      "id": "Math.random()",
+      "id": "3",
       "menuImg": "../img/massiveDishes/FriedKhinkali.svg",
       "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
       "name": "Хинкали жаренные (6шт)",
@@ -63,7 +63,7 @@
       "category": "khinkali"
     },
     {
-      "id": "Math.random()",
+      "id": "4",
       "menuImg": "../img/massiveDishes/Low-calorieLunchWithYogurt.svg",
       "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
       "name": "Ланч низко-калорийный",
@@ -76,11 +76,11 @@
       "category": "salad"
     },
     {
-      "id": "Math.random()",
+      "id": "5",
       "menuImg": "../img/massiveDishes/KhachapuriInMegrelian.svg",
-      "bigImg": "https://hip2go.ru/penza/api2/images/IikoProducts633/199e8a670d-1_1000x.jpg",
-      "name": "Хачапури по-мегрельски",
-      "title": "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
+      "bigImg": "https://static.tildacdn.com/stor3731-3961-4665-b935-656633623433/61727786.jpg",
+      "name": "Чебуреки традиционные",
+      "title": "Чебуреки — это популярное блюдо восточной кухни, представляющее собой хрустящие жареные пирожки с сочной мясной начинкой. Тонкое тесто, обжаренное до золотистой корочки, скрывает внутри ароматный и нежный фарш из говядины, свинины или баранины с добавлением специй и лука. Чебуреки идеально подходят для сытного перекуса или основного блюда, радующего насыщенным вкусом и аппетитным видом.",
       "weight": 430,
       "price": 490,
       "basket": false,
@@ -89,7 +89,7 @@
       "category": "khinkali"
     },
     {
-      "id": "Math.random()",
+      "id": "6",
       "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
       "bigImg": "https://ferum55.ru/wp-content/uploads/2021/05/bifshteks-solsberi-s-fermerskim-kartofelem-.jpg",
       "name": "Котлета с картофелем",
@@ -102,6 +102,7 @@
       "category": "hot",
       "Varieties": [
         {
+          "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "name": "C сыром",
           "price": 125,
           "weight": 80,
@@ -109,12 +110,14 @@
         },
         {
           "name": "Традиционные",
+          "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "price": 115,
           "weight": 80,
           "count": 0
         },
         {
           "name": "Из баранины с тархуном",
+          "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "price": 125,
           "weight": 80,
           "count": 0
@@ -122,32 +125,35 @@
       ]
     },
     {
-      "id": "Math.random()",
+      "id": "7",
       "menuImg": "../img/massiveDishes/MaskGroup.svg",
-      "bigImg": "https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook",
-      "name": "Khachapuri in Adjarian",
-      "title": "Хачапури Лодочка с начинкой из расплавленного сыра сулугуни, яйца и масла.",
+      "bigImg": "https://s1.eda.ru/StaticContent/Photos/161125164152/161206150112/p_O.jpg",
+      "name": "Харчо по грузинскински",
+      "title": "Харчо́ — национальный грузинский суп из говядины с рисом, грецкими орехами и тклапи или кислым соусом ткемали. Суп очень пряный, острый, с обилием чеснока и зелени. Он намного гуще других супов, к которым применяется правило «в супе должна быть половина жидкости».",
       "weight": 430,
       "price": 470,
       "basket": false,
       "status": true,
       "count": 0,
-      "category": "khinkali",
+      "category": "Soup",
       "Varieties": [
         {
-          "name": "C сыром",
+          "name": "С рисом",
+          "menuImg": "../img/massiveDishes/MaskGroup.svg",
           "price": 125,
           "weight": 80,
           "count": 0
         },
         {
-          "name": "Традиционные",
+          "name": "Из говядины",
+          "menuImg": "../img/massiveDishes/MaskGroup.svg",
           "price": 115,
           "weight": 80,
           "count": 0
         },
         {
-          "name": "Из баранины с тархуном",
+          "name": "Из баранины",
+          "menuImg": "../img/massiveDishes/MaskGroup.svg",
           "price": 125,
           "weight": 80,
           "count": 0
@@ -155,11 +161,11 @@
       ]
     },
     {
-      "id": "Math.random()",
+      "id": "8",
       "menuImg": "../img/massiveDishes/MaskGroup-1.svg",
-      "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
-      "name": "Хинкали традиционные",
-      "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+      "bigImg": "https://static3.bigstockphoto.com/5/0/3/large1500/305386915.jpg",
+      "name": "Пирожки с курицей",
+      "title": "Предлагаем вам оригинальные сытные пирожки с курицей и моцареллой. Чудесный аромат свежей выпечки, тягучий сыр и мягкое тесто —невероятно вкусно.",
       "weight": 350,
       "price": 495,
       "basket": false,
@@ -168,11 +174,11 @@
       "category": "khinkali"
     },
     {
-      "id": "Math.random()",
+      "id": "9",
       "menuImg": "../img/massiveDishes/MaskGroup-2.svg",
-      "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
-      "name": "Хинкали жаренные (6шт)",
-      "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями. ",
+      "bigImg": "https://static.tildacdn.com/stor3262-3962-4836-a164-396131333435/87532754.jpg",
+      "name": "Рулетики из лосося",
+      "title": "Рулет из лосося — это изысканное блюдо, представляющее собой нежные ломтики свежего лосося, свернутые в аккуратные рулетики. Внутри каждого рулета может находиться разнообразная начинка, такая как сливочный сыр, свежие овощи или ароматные травы, что придает блюду особый вкус и утонченность. Идеально подходит как для праздничного стола, так и для романтического ужина.",
       "weight": 350,
       "price": 520,
       "basket": false,
@@ -181,11 +187,11 @@
       "category": "khinkali"
     },
     {
-      "id": "Math.random()",
+      "id": "10",
       "menuImg": "../img/massiveDishes/MaskGroup-3.svg",
-      "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
-      "name": "Ланч низко-калорийный",
-      "title": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
+      "bigImg": "https://static.tildacdn.com/tild3062-3235-4232-b133-346333636566/DSC_3923_1.jpg",
+      "name": "Осетинские пироги",
+      "title": "Традиционное блюдо осетинской кухни в виде плоских пирогов с различными видами несладких начинок. Имеет круглую форму диаметром 30-40 см и толщину в 2 см. В традиционной культуре осетин пироги с основным видом начинок являются культовым блюдом, имея определённое ритуальное значение.",
       "weight": 450,
       "price": 1148,
       "basket": false,
@@ -194,11 +200,11 @@
       "category": "salad"
     },
     {
-      "id": "Math.random()",
-      "menuImg": "../img/massiveDishes/MaskGroup-4.svg",
-      "bigImg": "https://hip2go.ru/penza/api2/images/IikoProducts633/199e8a670d-1_1000x.jpg",
+      "id": "11",
+      "menuImg": "../img/massiveDishes/KhachapuriInAdjarian.svg",
+      "bigImg": "https://avatars.mds.yandex.net/get-eda/3798638/d7d37e24d7554dcea1be109cbadbd83f/1440x1082",
       "name": "Хачапури по-мегрельски",
-      "title": "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
+      "title": "Менгельские хачапури — это разновидность традиционного грузинского хачапури, представляющая собой небольшие пирожки с сырной начинкой. Эти миниатюрные лепёшки из нежного теста наполняются расплавленным сыром и запекаются до золотистой корочки. Менгельские хачапури идеально подходят для закуски или перекуса, радуя своим насыщенным вкусом и ароматом.",
       "weight": 430,
       "price": 490,
       "basket": false,
@@ -207,11 +213,11 @@
       "category": "khinkali"
     },
     {
-      "id": "Math.random()",
+      "id": "12",
       "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
-      "bigImg": "https://ferum55.ru/wp-content/uploads/2021/05/bifshteks-solsberi-s-fermerskim-kartofelem-.jpg",
-      "name": "Котлета с картофелем",
-      "title": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
+      "bigImg": "https://avatars.mds.yandex.net/get-altay/2378041/2a00000174c021caa6840d9e20a3e75442c4/XXL",
+      "name": "Хачапури со шпинатом",
+      "title": "Хачапури со шпинатом — это оригинальная вариация классического грузинского блюда, сочетающая в себе насыщенный вкус сыра и свежую зелень шпината. Внутри мягкой и ароматной лепёшки прячется аппетитная начинка из расплавленного сыра и нежного шпината, которая придает блюду легкость и утонченность. Хачапури со шпинатом станет отличным выбором как для сытного завтрака, так и для легкого обеда или ужина.",
       "weight": 350,
       "price": 520,
       "basket": false,
@@ -220,19 +226,22 @@
       "category": "hot",
       "Varieties": [
         {
-          "name": "C сыром",
+          "name": "C доп. шпинатом",
+          "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 125,
           "weight": 80,
           "count": 0
         },
         {
           "name": "Традиционные",
+          "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 115,
           "weight": 80,
           "count": 0
         },
         {
-          "name": "Из баранины с тархуном",
+          "name": "С тархуном",
+          "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 125,
           "weight": 80,
           "count": 0
@@ -242,7 +251,7 @@
   ],
   "hot": [
     {
-      "id": 0.49290090903956707,
+      "id": "6",
       "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
       "bigImg": "https://ferum55.ru/wp-content/uploads/2021/05/bifshteks-solsberi-s-fermerskim-kartofelem-.jpg",
       "name": "Котлета с картофелем",
@@ -250,11 +259,12 @@
       "weight": 350,
       "price": 520,
       "basket": false,
-      "status": true,
       "count": 0,
+      "status": true,
       "category": "hot",
       "Varieties": [
         {
+          "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "name": "C сыром",
           "price": 125,
           "weight": 80,
@@ -262,12 +272,14 @@
         },
         {
           "name": "Традиционные",
+          "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "price": 115,
           "weight": 80,
           "count": 0
         },
         {
           "name": "Из баранины с тархуном",
+          "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "price": 125,
           "weight": 80,
           "count": 0
@@ -275,11 +287,11 @@
       ]
     },
     {
-      "id": 0.47046260709433296,
-      "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
-      "bigImg": "https://ferum55.ru/wp-content/uploads/2021/05/bifshteks-solsberi-s-fermerskim-kartofelem-.jpg",
-      "name": "Котлета с картофелем",
-      "title": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
+      "id": "12",
+      "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
+      "bigImg": "https://avatars.mds.yandex.net/get-altay/2378041/2a00000174c021caa6840d9e20a3e75442c4/XXL",
+      "name": "Хачапури со шпинатом",
+      "title": "Хачапури со шпинатом — это оригинальная вариация классического грузинского блюда, сочетающая в себе насыщенный вкус сыра и свежую зелень шпината. Внутри мягкой и ароматной лепёшки прячется аппетитная начинка из расплавленного сыра и нежного шпината, которая придает блюду легкость и утонченность. Хачапури со шпинатом станет отличным выбором как для сытного завтрака, так и для легкого обеда или ужина.",
       "weight": 350,
       "price": 520,
       "basket": false,
@@ -288,19 +300,22 @@
       "category": "hot",
       "Varieties": [
         {
-          "name": "C сыром",
+          "name": "C доп. шпинатом",
+          "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 125,
           "weight": 80,
           "count": 0
         },
         {
           "name": "Традиционные",
+          "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 115,
           "weight": 80,
           "count": 0
         },
         {
-          "name": "Из баранины с тархуном",
+          "name": "С тархуном",
+          "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 125,
           "weight": 80,
           "count": 0
@@ -310,7 +325,7 @@
   ],
   "khinkali": [
     {
-      "id": "Math.random()",
+      "id": "1",
       "menuImg": "../img/massiveDishes/khachapuri.svg",
       "bigImg": "https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook",
       "name": "Khachapuri in Adjarian",
@@ -319,23 +334,26 @@
       "price": 470,
       "basket": false,
       "status": true,
-      "count": 0,
       "category": "khinkali",
+      "count": 0,
       "Varieties": [
         {
           "name": "C сыром",
+          "menuImg": "../img/massiveDishes/khachapuri.svg",
           "price": 125,
           "weight": 80,
           "count": 0
         },
         {
           "name": "Традиционные",
+          "menuImg": "../img/massiveDishes/khachapuri.svg",
           "price": 115,
           "weight": 80,
           "count": 0
         },
         {
           "name": "Из баранины с тархуном",
+          "menuImg": "../img/massiveDishes/khachapuri.svg",
           "price": 125,
           "weight": 80,
           "count": 0
@@ -343,20 +361,20 @@
       ]
     },
     {
-      "id": "Math.random()",
+      "id": "2",
       "menuImg": "../img/massiveDishes/traditional.svg",
       "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
       "name": "Хинкали традиционные",
       "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
       "weight": 350,
-      "price": 495,
+      "price": 1000,
       "basket": false,
       "status": false,
       "count": 0,
       "category": "khinkali"
     },
-    {
-      "id": "Math.random()",
+ {
+      "id": "3",
       "menuImg": "../img/massiveDishes/FriedKhinkali.svg",
       "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
       "name": "Хинкали жаренные (6шт)",
@@ -369,57 +387,37 @@
       "category": "khinkali"
     },
     {
-      "id": "Math.random()",
-      "menuImg": "../img/massiveDishes/KhachapuriInMegrelian.svg",
-      "bigImg": "https://hip2go.ru/penza/api2/images/IikoProducts633/199e8a670d-1_1000x.jpg",
-      "name": "Хачапури по-мегрельски",
-      "title": "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
-      "weight": 430,
-      "price": 490,
+      "id": "4",
+      "menuImg": "../img/massiveDishes/Low-calorieLunchWithYogurt.svg",
+      "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
+      "name": "Ланч низко-калорийный",
+      "title": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
+      "weight": 450,
+      "price": 1148,
       "basket": false,
       "status": false,
       "count": 0,
+      "category": "salad"
+    },
+    {
+      "id": "5",
+      "menuImg": "../img/massiveDishes/KhachapuriInMegrelian.svg",
+      "bigImg": "https://static.tildacdn.com/stor3731-3961-4665-b935-656633623433/61727786.jpg",
+      "name": "Чебуреки",
+      "title": "Чебуреки — это популярное блюдо восточной кухни, представляющее собой хрустящие жареные пирожки с сочной мясной начинкой. Тонкое тесто, обжаренное до золотистой корочки, скрывает внутри ароматный и нежный фарш из говядины, свинины или баранины с добавлением специй и лука. Чебуреки идеально подходят для сытного перекуса или основного блюда, радующего насыщенным вкусом и аппетитным видом.",
+      "weight": 430,
+      "price": 490,
+      "basket": false,
+      "count": 0,
+      "status": false,
       "category": "khinkali"
     },
-    {
-      "id": "Math.random()",
-      "menuImg": "../img/massiveDishes/MaskGroup.svg",
-      "bigImg": "https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook",
-      "name": "Khachapuri in Adjarian",
-      "title": "Хачапури Лодочка с начинкой из расплавленного сыра сулугуни, яйца и масла.",
-      "weight": 430,
-      "price": 470,
-      "basket": false,
-      "status": true,
-      "count": 0,
-      "category": "khinkali",
-      "Varieties": [
-        {
-          "name": "C сыром",
-          "price": 125,
-          "weight": 80,
-          "count": 0
-        },
-        {
-          "name": "Традиционные",
-          "price": 115,
-          "weight": 80,
-          "count": 0
-        },
-        {
-          "name": "Из баранины с тархуном",
-          "price": 125,
-          "weight": 80,
-          "count": 0
-        }
-      ]
-    },
-    {
-      "id": "Math.random()",
+ {
+      "id": "8",
       "menuImg": "../img/massiveDishes/MaskGroup-1.svg",
-      "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
-      "name": "Хинкали традиционные",
-      "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+      "bigImg": "https://static3.bigstockphoto.com/5/0/3/large1500/305386915.jpg",
+      "name": "Пирожки с курицей",
+      "title": "Предлагаем вам оригинальные сытные пирожки с курицей и моцареллой. Чудесный аромат свежей выпечки, тягучий сыр и мягкое тесто —невероятно вкусно.",
       "weight": 350,
       "price": 495,
       "basket": false,
@@ -428,11 +426,11 @@
       "category": "khinkali"
     },
     {
-      "id": "Math.random()",
+      "id": "9",
       "menuImg": "../img/massiveDishes/MaskGroup-2.svg",
-      "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
-      "name": "Хинкали жаренные (6шт)",
-      "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями. ",
+      "bigImg": "https://static.tildacdn.com/stor3262-3962-4836-a164-396131333435/87532754.jpg",
+      "name": "Рулетики из лосося",
+      "title": "Рулет из лосося — это изысканное блюдо, представляющее собой нежные ломтики свежего лосося, свернутые в аккуратные рулетики. Внутри каждого рулета может находиться разнообразная начинка, такая как сливочный сыр, свежие овощи или ароматные травы, что придает блюду особый вкус и утонченность. Идеально подходит как для праздничного стола, так и для романтического ужина.",
       "weight": 350,
       "price": 520,
       "basket": false,
@@ -440,12 +438,12 @@
       "count": 0,
       "category": "khinkali"
     },
-    {
-      "id": "Math.random()",
-      "menuImg": "../img/massiveDishes/MaskGroup-4.svg",
-      "bigImg": "https://hip2go.ru/penza/api2/images/IikoProducts633/199e8a670d-1_1000x.jpg",
+ {
+      "id": "11",
+      "menuImg": "../img/massiveDishes/KhachapuriInAdjarian.svg",
+      "bigImg": "https://avatars.mds.yandex.net/get-eda/3798638/d7d37e24d7554dcea1be109cbadbd83f/1440x1082",
       "name": "Хачапури по-мегрельски",
-      "title": "Невероятно ароматная лепёшка с сыром сулугуни внутри и снаружи",
+      "title": "Менгельские хачапури — это разновидность традиционного грузинского хачапури, представляющая собой небольшие пирожки с сырной начинкой. Эти миниатюрные лепёшки из нежного теста наполняются расплавленным сыром и запекаются до золотистой корочки. Менгельские хачапури идеально подходят для закуски или перекуса, радуя своим насыщенным вкусом и ароматом.",
       "weight": 430,
       "price": 490,
       "basket": false,
@@ -454,61 +452,5 @@
       "category": "khinkali"
     }
   ],
-  "total_basket": [
-    {
-      "0": {
-        "id": "Math.random()",
-        "menuImg": "../img/massiveDishes/FriedKhinkali.svg",
-        "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
-        "name": "Хинкали жаренные (6шт)",
-        "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями.",
-        "weight": 350,
-        "price": 520,
-        "basket": false,
-        "status": false,
-        "count": 2,
-        "category": "khinkali"
-      },
-      "1": {
-        "id": "Math.random()",
-        "menuImg": "../img/massiveDishes/Low-calorieLunchWithYogurt.svg",
-        "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
-        "name": "Ланч низко-калорийный",
-        "title": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
-        "weight": 450,
-        "price": 1148,
-        "basket": false,
-        "status": false,
-        "count": 1,
-        "category": "salad"
-      },
-      "2": {
-        "id": "Math.random()",
-        "menuImg": "../img/massiveDishes/MaskGroup-3.svg",
-        "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
-        "name": "Ланч низко-калорийный",
-        "title": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
-        "weight": 450,
-        "price": 1148,
-        "basket": false,
-        "status": false,
-        "count": 1,
-        "category": "salad"
-      },
-      "3": {
-        "id": "Math.random()",
-        "menuImg": "../img/massiveDishes/MaskGroup-1.svg",
-        "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
-        "name": "Хинкали традиционные",
-        "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
-        "weight": 350,
-        "price": 495,
-        "basket": false,
-        "status": false,
-        "count": 1,
-        "category": "khinkali"
-      },
-      "id": "7a7d"
-    }
-  ]
+  "total_basket": []
 }
