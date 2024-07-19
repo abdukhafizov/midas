@@ -18,21 +18,24 @@
           "menuImg": "../img/massiveDishes/khachapuri.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 0
         },
         {
           "name": "Традиционные",
           "menuImg": "../img/massiveDishes/khachapuri.svg",
           "price": 115,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 1
         },
         {
           "name": "Из баранины с тархуном",
           "menuImg": "../img/massiveDishes/khachapuri.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 2
         }
       ]
     },
@@ -106,21 +109,24 @@
           "name": "C сыром",
           "price": 125,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 0
         },
         {
           "name": "Традиционные",
           "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "price": 115,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 1
         },
         {
           "name": "Из баранины с тархуном",
           "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+           "count": 0,
+          "id": 2
         }
       ]
     },
@@ -142,21 +148,24 @@
           "menuImg": "../img/massiveDishes/MaskGroup.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 0
         },
         {
           "name": "Из говядины",
           "menuImg": "../img/massiveDishes/MaskGroup.svg",
           "price": 115,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 1
         },
         {
           "name": "Из баранины",
           "menuImg": "../img/massiveDishes/MaskGroup.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+           "count": 0,
+          "id": 2
         }
       ]
     },
@@ -230,21 +239,24 @@
           "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 0
         },
         {
           "name": "Традиционные",
           "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 115,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 1
         },
         {
           "name": "С тархуном",
           "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+           "count": 0,
+          "id": 2
         }
       ]
     }
@@ -268,21 +280,24 @@
           "name": "C сыром",
           "price": 125,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 0
         },
         {
           "name": "Традиционные",
           "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "price": 115,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 1
         },
         {
           "name": "Из баранины с тархуном",
           "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+           "count": 0,
+          "id": 2
         }
       ]
     },
@@ -304,21 +319,24 @@
           "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 0
         },
         {
           "name": "Традиционные",
           "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 115,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 1
         },
         {
           "name": "С тархуном",
           "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+           "count": 0,
+          "id": 2
         }
       ]
     }
@@ -342,21 +360,24 @@
           "menuImg": "../img/massiveDishes/khachapuri.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 0
         },
         {
           "name": "Традиционные",
           "menuImg": "../img/massiveDishes/khachapuri.svg",
           "price": 115,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 1
         },
         {
           "name": "Из баранины с тархуном",
           "menuImg": "../img/massiveDishes/khachapuri.svg",
           "price": 125,
           "weight": 80,
-          "count": 0
+          "count": 0,
+          "id": 2
         }
       ]
     },
@@ -373,7 +394,7 @@
       "count": 0,
       "category": "khinkali"
     },
- {
+    {
       "id": "3",
       "menuImg": "../img/massiveDishes/FriedKhinkali.svg",
       "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
@@ -412,7 +433,7 @@
       "status": false,
       "category": "khinkali"
     },
- {
+    {
       "id": "8",
       "menuImg": "../img/massiveDishes/MaskGroup-1.svg",
       "bigImg": "https://static3.bigstockphoto.com/5/0/3/large1500/305386915.jpg",
@@ -438,7 +459,7 @@
       "count": 0,
       "category": "khinkali"
     },
- {
+    {
       "id": "11",
       "menuImg": "../img/massiveDishes/KhachapuriInAdjarian.svg",
       "bigImg": "https://avatars.mds.yandex.net/get-eda/3798638/d7d37e24d7554dcea1be109cbadbd83f/1440x1082",
@@ -452,5 +473,45 @@
       "category": "khinkali"
     }
   ],
-  "total_basket": []
+  "total_basket": [
+    {
+      "id": "2",
+      "menuImg": "../img/massiveDishes/traditional.svg",
+      "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
+      "name": "Хинкали традиционные",
+      "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 1000,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "khinkali"
+    },
+    {
+      "id": "4",
+      "menuImg": "../img/massiveDishes/Low-calorieLunchWithYogurt.svg",
+      "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
+      "name": "Ланч низко-калорийный",
+      "title": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
+      "weight": 450,
+      "price": 1148,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "salad"
+    },
+    {
+      "id": "5",
+      "menuImg": "../img/massiveDishes/KhachapuriInMegrelian.svg",
+      "bigImg": "https://static.tildacdn.com/stor3731-3961-4665-b935-656633623433/61727786.jpg",
+      "name": "Чебуреки традиционные",
+      "title": "Чебуреки — это популярное блюдо восточной кухни, представляющее собой хрустящие жареные пирожки с сочной мясной начинкой. Тонкое тесто, обжаренное до золотистой корочки, скрывает внутри ароматный и нежный фарш из говядины, свинины или баранины с добавлением специй и лука. Чебуреки идеально подходят для сытного перекуса или основного блюда, радующего насыщенным вкусом и аппетитным видом.",
+      "weight": 430,
+      "price": 490,
+      "basket": false,
+      "count": 1,
+      "status": false,
+      "category": "khinkali"
+    }
+  ]
 }

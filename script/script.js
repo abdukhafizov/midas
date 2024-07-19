@@ -1,32 +1,38 @@
+axios.get("http://localhost:3002/dishes").then(function (res) {
+  let data = res.data;
+  console.log(data);
+  reload(data);
+  // modalRel(data)
+  // ModalBasket(data)
+});
 
+//     let url = window.location.href
+//     let url_id = url.slice(url.lastIndexOf("=") + 1)
 
-axios.get("http://localhost:3002/dishes")
-    .then(function (res) {
-        let data = res.data
-        console.log(data);
-        reload(data)
-        modalRel(data)
-        // ModalBasket(data)
-    })
-let hot_arrow = document.querySelector("#hot_arrow")
-let hot_arrow_box = document.querySelector(".hot_arrow_box")
+// axios.get(`http://localhost:3002/dishes/${url_id}`)
+//    .then(function (res) {
+//        let data = res.data
+//        console.log(data, typeof data);
+
+//    })
+let id;
+let hot_arrow = document.querySelector("#hot_arrow");
+let hot_arrow_box = document.querySelector(".hot_arrow_box");
 // let hotdishes = document.querySelector(".hotdishes")
 // let blackBox = document.querySelector(".blackBox")
-let first_hot_click = document.querySelector(".first_hot_click")
-let about_popular_dishes = document.querySelector(".about_popular_dishes")
-let basket_counter = document.querySelector(".basket_counter")
-let exit = document.querySelector(".exit")
-let parent_modal = document.querySelector(".parent_modal")
-let count = 0
-let count_of_modal = 0
-let pwImg = document.querySelector("#pwImg")
-let emptyShopper = document.querySelector("#emptyShopper")
-let totalBlock = document.querySelector(".totalBlock")
-let all_count_n = document.querySelector(".all-count-number")
+let first_hot_click = document.querySelector(".first_hot_click");
+let about_popular_dishes = document.querySelector(".about_popular_dishes");
+let basket_counter = document.querySelector(".basket_counter");
+let exit = document.querySelector(".exit");
+let parent_modal = document.querySelector(".parent_modal");
+let count = 0;
+let count_of_modal = 0;
+let pwImg = document.querySelector("#pwImg");
+let emptyShopper = document.querySelector("#emptyShopper");
+let totalBlock = document.querySelector(".totalBlock");
+let all_count_n = document.querySelector(".all-count-number");
 
-let countlenght = 0
-
-
+let countlenght = 0;
 
 // let click = document.querySelector("#click")
 
@@ -35,13 +41,9 @@ let countlenght = 0
 
 //     clock.addEventListener("click", () => {
 
-
 //             axios.post("http://localhost:3002/khinkali", data)
 //     })
 // }
-
-
-
 
 // click.addEventListener("click", () => {
 //     axios.post('http://localhost:3002/hot', {
@@ -79,35 +81,29 @@ let countlenght = 0
 // })
 
 let categories = [
-    {
-        name: "hot",
-        hot: []
-    },
-    {
-        name: "khinkals",
-        khinkals: []
-    }
-]
+  {
+    name: "hot",
+    hot: [],
+  },
+  {
+    name: "khinkals",
+    khinkals: [],
+  },
+];
 
 let basket = {
-    allPrice: 0,
-    count: 1,
-    dish: [
+  allPrice: 0,
+  count: 1,
+  dish: [],
+};
 
-    ],
-}
+//---ЛОКАЛ СТРЕЙДЖ
 
-//---ЛОКАЛ СТРЕЙДЖ 
-
-if(typeof localStorage.getItem('basket') === 'string'){
-    basket.dish = JSON.parse(localStorage.getItem('basket'))
+if (typeof localStorage.getItem("basket") === "string") {
+  basket.dish = JSON.parse(localStorage.getItem("basket"));
 }
 //---------
 console.log(basket);
-exit.onclick = () => {
-    parent_modal.classList.add("hide")
-}
-
 
 //Распределил и запушил элементы из массива в другой ме=ассив по категориям
 
@@ -129,8 +125,8 @@ exit.onclick = () => {
 // console.log(categories);
 
 hot_arrow.onclick = () => {
-    hot_arrow_box.classList.toggle("hidden")
-}
+  hot_arrow_box.classList.toggle("hidden");
+};
 
 //назыание блюд в загаловке
 // for (let item of categories) {
@@ -143,451 +139,428 @@ hot_arrow.onclick = () => {
 // }
 
 first_hot_click.onclick = () => {
-    hot_arrow_box.classList.toggle("hidden")
-}
-
-
+  hot_arrow_box.classList.toggle("hidden");
+};
 
 //Создание элементов (блюд)
 
 function reload(arr) {
-    for (let item of arr) {
-        let dish = document.createElement("div")
-        let first_img = document.createElement("img")
-        let ab_dish = document.createElement("a")
-        let weight = document.createElement("div")
-        let text_of_salmon = document.createElement("p")
-        let p_w_bs = document.createElement("span")
-        let price = document.createElement("p")
-        let sec_img = document.createElement("img")
-        let inshoper = document.createElement("div")
-        let species = document.createElement("div")
+  for (let item of arr) {
+    if (item.Varieties) {
+      let dish = document.createElement("div");
+      let first_img = document.createElement("img");
+      let ab_dish = document.createElement("a");
+      let weight = document.createElement("div");
+      let text_of_salmon = document.createElement("p");
+      let p_w_bs = document.createElement("span");
+      let price = document.createElement("p");
+      let sec_img = document.createElement("img");
+      let inshoper = document.createElement("div");
+      let species = document.createElement("div");
 
-        dish.classList.add("dish")
-        ab_dish.classList.add("ab_dish")
-        ab_dish.id = "dish_of_menu"
-        weight.classList.add("weight")
-        text_of_salmon.classList.add("text_of_salmon")
-        p_w_bs.classList.add("p_w_bs")
-        price.classList.add("price")
-        inshoper.classList.add("inshoper")
-        species.classList.add("species")
+      dish.classList.add("dish");
+      ab_dish.classList.add("ab_dish");
+      ab_dish.id = "dish_of_menu";
+      weight.classList.add("weight");
+      text_of_salmon.classList.add("text_of_salmon");
+      p_w_bs.classList.add("p_w_bs");
+      price.classList.add("price");
+      inshoper.classList.add("inshoper");
+      species.classList.add("species");
 
-        first_img.src = item.menuImg
-        sec_img.src = "../img/basket.svg"
-        
+      first_img.src = item.menuImg;
 
-        ab_dish.innerHTML = item.name
-        weight.innerHTML = item.weight + "г"
-        text_of_salmon.innerHTML = item.title
-        price.innerHTML = item.price + "₽"
-        species.innerHTML = "3 ВИДА"
-        species.style.display = "none"
-        sec_img.classList.add("nonee")
+      ab_dish.innerHTML = item.name;
+      weight.innerHTML = item.weight + "г";
+      text_of_salmon.innerHTML = item.title;
+      price.innerHTML = item.price + "₽";
+      species.innerHTML = "3 ВИДА";
+      species.style.display = "block";
+      sec_img.style.display = "none";
+      price.id = "scpecies";
 
-        about_popular_dishes.append(dish)
-        dish.append(first_img, ab_dish, weight, text_of_salmon, p_w_bs,)
-        p_w_bs.append(price, sec_img, species)
+      about_popular_dishes.append(dish);
+      dish.append(first_img, ab_dish, weight, text_of_salmon, p_w_bs);
+      p_w_bs.append(price, sec_img, species);
+
+      species.onclick = () => {
+        parent_modal.classList.remove("hide");
+        for (let item2 of item.Varieties) {
+          console.log(item2);
+
+          let modal_blocks = document.querySelector(".modal_blocks");
+
+          let modal_block = document.createElement("div");
+          let titleWithWeight = document.createElement("span");
+          let ab_dish = document.createElement("p");
+          let weight = document.createElement("div");
+          let count = document.createElement("div");
+          let top_count_style = document.createElement("div");
+          let center = document.createElement("div");
+          let minus = document.createElement("span");
+          let modal_numb = document.createElement("span");
+          let plus = document.createElement("span");
+          let bottom_count_style = document.createElement("div");
+          let p_w_bs = document.createElement("span");
+          let price = document.createElement("p");
+          let basketImg = document.createElement("img");
+
+          modal_block.classList.add("modal_block");
+          titleWithWeight.classList.add("titleWithWeight");
+          ab_dish.classList.add("ab_dish");
+          weight.classList.add("weight");
+          count.classList.add("count");
+          top_count_style.classList.add("top_count_style");
+          center.classList.add("center");
+          minus.id = "minus";
+          modal_numb.id = "modal_numb";
+          plus.id = "plus";
+          bottom_count_style.classList.add("bottom_count_style");
+          p_w_bs.classList.add("p_w_bs");
+          price.classList.add("price");
+          basketImg.classList.add("baskimg")
+
+          basketImg.src = "../img/basket.svg";
+          ab_dish.innerHTML = item2.name;
+          weight.innerHTML = item2.weight + "г";
+          price.innerHTML = item2.price + "₽";
+          minus.innerHTML = "-";
+          modal_numb.innerHTML = item2.count + "шт";
+          plus.innerHTML = "+";
+          
+          basketImg.setAttribute("data-name", 0)
+          
+                    exit.onclick = () => {
+                      parent_modal.classList.add("hide");
+                      let m_b = document.querySelectorAll(".modal_block");
+                      for (let items of m_b) {
+                        items.remove();
+                      }
+                    };
+
+          modal_blocks.append(modal_block);
+          modal_block.append(titleWithWeight, count, p_w_bs);
+          titleWithWeight.append(ab_dish, weight);
+          // count.append(top_count_style, center, bottom_count_style)
+          center.append(minus, modal_numb, plus);
+          p_w_bs.append(price, basketImg);
 
 
-
-        sec_img.onclick = () => {
-            basket_counter.classList.remove("hidden")
+          basketImg.onclick = () => {
+            localStorage.setItem("key", item2.id)
+            basket_counter.classList.remove("hidden");
             // emptyShopper.style.display = "none"
-            let num = +basket_counter.innerHTML
-            totalBlock.style.display = "flex"
+            let num = +basket_counter.innerHTML;
+            totalBlock.style.display = "flex";
             // count++
-            //можно при добавлении в корзину сразу же увелчиивать итоговую цену 
-            sec_img.classList.toggle("star_active")
-            if (sec_img.classList.contains('star_active')) {
-                basket_counter.innerHTML = num + 1
-                all_count_n.innerHTML = num + 1
-                basket.dish.push(item);
-                ModalBasket(basket.dish, box_of_products_in_basket)
-                // emptyShopper.classList.add("hidden")
-                localStorage.setItem("basket", JSON.stringify(basket.dish))
-
+            //можно при добавлении в корзину сразу же увелчиивать итоговую цену
+            basketImg.classList.toggle("star_active");
+            if (basketImg.classList.contains("star_active")) {
+              basket_counter.innerHTML = num + 1;
+              all_count_n.innerHTML = num + 1;
+              basket.dish.push(item);
+              ModalBasket(basket.dish, box_of_products_in_basket);
+              // emptyShopper.classList.add("hidden")
+              localStorage.setItem("basket", JSON.stringify(basket.dish));
             } else {
-                basket_counter.innerHTML = num - 1
-                all_count_n.innerHTML = num - 1
-                basket.dish.splice(basket.dish.indexOf(item), 1)
-                ModalBasket(basket.dish, box_of_products_in_basket)
-                // emptyShopper.classList.remove("hidden")
-
+              basket_counter.innerHTML = num - 1;
+              all_count_n.innerHTML = num - 1;
+              basket.dish.splice(basket.dish.indexOf(item), 1);
+              ModalBasket(basket.dish, box_of_products_in_basket);
+              // emptyShopper.classList.remove("hidden")
             }
             console.log(basket.dish);
             console.log(basket.dish.length);
-
-            // (тп = 0 )внутри цикла тотал прайс равно тотал прайс + айтем прайс 
+            // (тп = 0 )внутри цикла тотал прайс равно тотал прайс + айтем прайс
 
             // let allPriceNumb = document.querySelector(".all-price-number")
             // let total = 0
-
 
             // for(let i of basket.dish){
             //     total += i.price
             //     allPriceNumb.innerHTML = total + "₽"
             // }
-
+          };
         }
+      };
 
-        if (item.Varieties) {
-            species.style.display = "block"
-            sec_img.style.display = "none"
-            price.id = "scpecies"
-            // price.style.marginTop = "26"
+      console.log(item.Varieties);
+    } else {
+      let dish = document.createElement("div");
+      let first_img = document.createElement("img");
+      let ab_dish = document.createElement("a");
+      let weight = document.createElement("div");
+      let text_of_salmon = document.createElement("p");
+      let p_w_bs = document.createElement("span");
+      let price = document.createElement("p");
+      let sec_img = document.createElement("img");
+      let inshoper = document.createElement("div");
+      let species = document.createElement("div");
+
+      dish.classList.add("dish");
+      ab_dish.classList.add("ab_dish");
+      ab_dish.id = "dish_of_menu";
+      weight.classList.add("weight");
+      text_of_salmon.classList.add("text_of_salmon");
+      p_w_bs.classList.add("p_w_bs");
+      price.classList.add("price");
+      inshoper.classList.add("inshoper");
+      species.classList.add("species");
+
+      first_img.src = item.menuImg;
+      sec_img.src = "../img/basket.svg";
+
+      ab_dish.innerHTML = item.name;
+      weight.innerHTML = item.weight + "г";
+      text_of_salmon.innerHTML = item.title;
+      price.innerHTML = item.price + "₽";
+      species.innerHTML = "3 ВИДА";
+      species.style.display = "none";
+      sec_img.classList.add("nonee");
+
+      about_popular_dishes.append(dish);
+      dish.append(first_img, ab_dish, weight, text_of_salmon, p_w_bs);
+      p_w_bs.append(price, sec_img, species);
+
+      sec_img.onclick = () => {
+        basket_counter.classList.remove("hidden");
+        // emptyShopper.style.display = "none"
+        let num = +basket_counter.innerHTML;
+        totalBlock.style.display = "flex";
+        // count++
+        //можно при добавлении в корзину сразу же увелчиивать итоговую цену
+        sec_img.classList.toggle("star_active");
+        if (sec_img.classList.contains("star_active")) {
+          basket_counter.innerHTML = num + 1;
+          all_count_n.innerHTML = num + 1;
+          basket.dish.push(item);
+          ModalBasket(basket.dish, box_of_products_in_basket);
+          // emptyShopper.classList.add("hidden")
+          localStorage.setItem("basket", JSON.stringify(basket.dish));
         } else {
-            console.log("no");
+          basket_counter.innerHTML = num - 1;
+          all_count_n.innerHTML = num - 1;
+          basket.dish.splice(basket.dish.indexOf(item), 1);
+          ModalBasket(basket.dish, box_of_products_in_basket);
+          // emptyShopper.classList.remove("hidden")
         }
+        console.log(basket.dish);
+        console.log(basket.dish.length);
 
-        species.onclick = () => {
-            parent_modal.classList.remove('hide')
-        }
-        // console.log(item);
+        // (тп = 0 )внутри цикла тотал прайс равно тотал прайс + айтем прайс
 
-        ab_dish.addEventListener("click", () =>{
-            window.location.href = `/pages/about_product.html?id=${item.id}`
-        })
+        // let allPriceNumb = document.querySelector(".all-price-number")
+        // let total = 0
+
+        // for(let i of basket.dish){
+        //     total += i.price
+        //     allPriceNumb.innerHTML = total + "₽"
+        // }
+      };
+
+      species.onclick = () => {
+        parent_modal.classList.remove("hide");
+      };
+      // console.log(item);
+
+      ab_dish.addEventListener("click", () => {
+        window.location.href = `/pages/about_product.html?id=${item.id}`;
+      });
     }
+  }
 }
-
-
-
-//создание элементов в вариациях еды 
-function modalRel(obj) {
-    
-    let modal_blocks = document.querySelector(".modal_blocks")
-    for (let item of obj[0].Varieties) {
-console.log(obj[0].Varieties);
-//оно берет не весь массив а только вариаци
-//оно видимо берет именно вариации от первого массива
-        
-        let modal_block = document.createElement("div")
-        let titleWithWeight = document.createElement("span")
-        let ab_dish = document.createElement("p")
-        let weight = document.createElement("div")
-        let count = document.createElement("div")
-        let top_count_style = document.createElement("div")
-        let center = document.createElement("div")
-        let minus = document.createElement("span")
-        let modal_numb = document.createElement("span")
-        let plus = document.createElement("span")
-        let bottom_count_style = document.createElement("div")
-        let p_w_bs = document.createElement("span")
-        let price = document.createElement("p")
-        let basketImg = document.createElement("img")
-
-        modal_block.classList.add("modal_block")
-        titleWithWeight.classList.add("titleWithWeight")
-        ab_dish.classList.add("ab_dish")
-        weight.classList.add("weight")
-        count.classList.add("count")
-        top_count_style.classList.add("top_count_style")
-        center.classList.add("center")
-        minus.id = "minus"
-        modal_numb.id = "modal_numb"
-        plus.id = "plus"
-        bottom_count_style.classList.add("bottom_count_style")
-        p_w_bs.classList.add("p_w_bs")
-        price.classList.add("price")
-
-        basketImg.src = "../img/basket.svg"
-        ab_dish.innerHTML = item.name;
-        weight.innerHTML = item.weight + "г"
-        price.innerHTML = item.price + "₽"
-        minus.innerHTML = "-"
-        modal_numb.innerHTML = item.count + "шт"
-        plus.innerHTML = "+"
-
-
-
-        modal_blocks.append(modal_block)
-        modal_block.append(titleWithWeight, count, p_w_bs)
-        titleWithWeight.append(ab_dish, weight)
-        // count.append(top_count_style, center, bottom_count_style)
-        center.append(minus, modal_numb, plus)
-        p_w_bs.append(price, basketImg)
-
-        console.log(item.count);
-        minus.onclick = () => {
-
-            if (item.count <= 0) {
-                item.count = 0
-            } else {
-                item.count -= 1
-                modal_numb.innerHTML = item.count + "шт"
-
-            }
-        }
-
-        plus.onclick = () => {
-            item.count += 1
-            modal_numb.innerHTML = item.count + "шт"
-        }
-
-
-
-        basketImg.onclick = () => {
-            basket_counter.classList.remove("hidden")
-            let num = +basket_counter.innerHTML
-
-
-            basketImg.classList.toggle("star_active")
-            if (basketImg.classList.contains('star_active')) {
-                basket.dish.push(item);
-                ModalBasket(basket.dish, box_of_products_in_basket)
-                basket_counter.innerHTML = num + 1
-                all_count_n.innerHTML = num + 1
-                localStorage.setItem("basket", JSON.stringify(basket.dish))
-
-            } else {
-                basket_counter.innerHTML = num - 1
-                all_count_n.innerHTML = num - 1
-                basket.dish.splice(basket.dish.indexOf(item), 1)
-                ModalBasket(basket.dish, box_of_products_in_basket)
-                console.log(basket.dish);
-                
-            }
-
-            // let allPriceNumb = document.querySelector(".all-price-number")
-            // let total = 0
-
-
-            // for(let i of basket.dish){
-
-            //     total += i.price
-            //     allPriceNumb.innerHTML = total + "₽"
-            // }
-
-        }
-
-        console.log();
-        
-        
-        
-        
-        countlenght = basket.dish.length
-        all_count_n.innerHTML = countlenght
-    }
-}
-
-// function extraItems(arr){
-//     for(let item of )
-// }
-
 
 console.log(basket.dish.length);
 
-let parent_basket_modal = document.querySelector(".parent_basket_modal")
-let basketLink = document.querySelector("#basketLink")
-
+let parent_basket_modal = document.querySelector(".parent_basket_modal");
+let basketLink = document.querySelector("#basketLink");
 
 basketLink.onclick = () => {
-    parent_basket_modal.classList.add("open")
+  parent_basket_modal.classList.add("open");
 
-    for(let item of basket.dish){
-        ModalBasket(basket.dish, box_of_products_in_basket)
-    }
-}
+  for (let item of basket.dish) {
+    ModalBasket(basket.dish, box_of_products_in_basket);
+  }
+};
 
+basket_counter.classList.remove("hidden");
 
-basket_counter.classList.remove("hidden")
-
-let num = basket.dish.length
-basket_counter.innerHTML = num
+let num = basket.dish.length;
+basket_counter.innerHTML = num;
 
 close_basket.onclick = () => {
-    parent_basket_modal.classList.remove("open")
-}
-
-// parent_basket_modal.onclick = () => {
-//     parent_basket_modal.classList.remove("open")
-// }
-
-// console.log(uniqueArray);
-
-
-//перевести все в гет и пост а так же сделать корзину(м)
+  parent_basket_modal.classList.remove("open");
+};
 
 
 // создание/перенесение элементов в корзину
 
-let box_of_products_in_basket = document.querySelector(".box_of_products_in_basket")
-
-
-
+let box_of_products_in_basket = document.querySelector(
+  ".box_of_products_in_basket"
+);
 
 function ModalBasket(arr, place) {
-    place.innerHTML = ''
+  place.innerHTML = "";
 
-    for (let item of arr) {
-        let product = document.createElement("div")
-        let imgOfProduct = document.createElement("img")
-        let left_of_product = document.createElement("div")
-        let spanOfNPandWght = document.createElement("span")
-        let nameOfProduct = document.createElement("p")
-        let weight = document.createElement("div")
-        //
-        let right_of_product = document.createElement("div")
-        let count = document.createElement("div")
-        let top_count_style = document.createElement("div")
-        let center = document.createElement("div")
-        let minus = document.createElement("span")
-        let modal_numb = document.createElement("span")
-        let plus = document.createElement("span")
-        let bottom_count_style = document.createElement("div")
-        let price = document.createElement("div")
-        let total_price = 0
+  for (let item of arr) {
+    let product = document.createElement("div");
+    let imgOfProduct = document.createElement("img");
+    let left_of_product = document.createElement("div");
+    let spanOfNPandWght = document.createElement("span");
+    let nameOfProduct = document.createElement("p");
+    let weight = document.createElement("div");
+    let subspecies = document.createElement("p");
+    //
+    let right_of_product = document.createElement("div");
+    let count = document.createElement("div");
+    let top_count_style = document.createElement("div");
+    let center = document.createElement("div");
+    let minus = document.createElement("span");
+    let modal_numb = document.createElement("span");
+    let plus = document.createElement("span");
+    let bottom_count_style = document.createElement("div");
+    let price = document.createElement("div");
+    let total_price = 0;
 
-        count.id = "countOfBasket"
-        center.id = "centerBasket"
-        minus.id = "minus"
-        modal_numb.id = "modal_numb"
-        plus.id = "plus"
-        price.id = "priceOfBasket"
+    count.id = "countOfBasket";
+    center.id = "centerBasket";
+    minus.id = "minus";
+    modal_numb.id = "modal_numb";
+    plus.id = "plus";
+    price.id = "priceOfBasket";
 
-        product.classList.add("product")
-        imgOfProduct.classList.add("imgOfProduct")
-        left_of_product.classList.add("left_of_product")
-        spanOfNPandWght.classList.add("spanOfNPandWght")
-        nameOfProduct.classList.add("nameOfProduct")
-        weight.classList.add("weight")
-        right_of_product.classList.add("right_of_product")
-        count.classList.add("count")
-        top_count_style.classList.add("top_count_style")
-        center.classList.add("center")
-        bottom_count_style.classList.add("bottom_count_style")
-        price.classList.add("price")
+    product.classList.add("product");
+    imgOfProduct.classList.add("imgOfProduct");
+    left_of_product.classList.add("left_of_product");
+    spanOfNPandWght.classList.add("spanOfNPandWght");
+    nameOfProduct.classList.add("nameOfProduct");
+    weight.classList.add("weight");
+    right_of_product.classList.add("right_of_product");
+    count.classList.add("count");
+    top_count_style.classList.add("top_count_style");
+    center.classList.add("center");
+    bottom_count_style.classList.add("bottom_count_style");
+    price.classList.add("price");
+    subspecies.classList.add("subspecies");
 
+    imgOfProduct.src = item.menuImg;
 
-        imgOfProduct.src = item.menuImg
-
-        nameOfProduct.innerHTML = item.name
-        weight.innerHTML = item.weight + "г"
-        minus.innerHTML = "-"
-        modal_numb.innerHTML = "0 шт"
-        plus.innerHTML = "+"
-        price.innerHTML = item.price + "₽"
-
-        place.append(product)
-        product.append(left_of_product, right_of_product)
-        left_of_product.append(imgOfProduct, spanOfNPandWght)
-        spanOfNPandWght.append(nameOfProduct, weight)
-        right_of_product.append(count, price)
-        count.append(top_count_style, center, bottom_count_style)
-        center.append(minus, modal_numb, plus)
+    nameOfProduct.innerHTML = item.name;
+    weight.innerHTML = item.weight + "г";
+    minus.innerHTML = "-";
+    modal_numb.innerHTML = "0 шт";
+    plus.innerHTML = "+";
+    price.innerHTML = item.price + "₽";
+    
+    place.append(product);
+    product.append(left_of_product, right_of_product);
+    left_of_product.append(imgOfProduct, spanOfNPandWght);
+    spanOfNPandWght.append(nameOfProduct, subspecies,weight);
+    right_of_product.append(count, price);
+    count.append(top_count_style, center, bottom_count_style);
+    center.append(minus, modal_numb, plus);
+    
+    let s = document.querySelector('baskimg')
+    console.log(s);
+    if(item.status){
+        subspecies.innerHTML = item.Varieties[localStorage.getItem("key")].name;
         
+    }
 
-        plus.onclick = () => {
-            item.count += 1
-            modal_numb.innerHTML = item.count + "шт"
-            total_price = 0
-            let t = 0
-            let allPriceNumb = document.querySelector(".all-price-number")
+    plus.onclick = () => {
+      item.count += 1;
+      modal_numb.innerHTML = item.count + "шт";
+      total_price = 0;
+      let t = 0;
+      let allPriceNumb = document.querySelector(".all-price-number");
 
-            for (let i of basket.dish) {
-                t = (i.count * i.price)
-                total_price = t + total_price
-            }
-            allPriceNumb.textContent = total_price + "₽"
-        }
+      for (let i of basket.dish) {
+        t = i.count * i.price;
+        total_price = t + total_price;
+      }
+      allPriceNumb.textContent = total_price + "₽";
+    };
 
+    minus.onclick = () => {
+      if (item.count <= 0) {
+        item.count = 0;
+      } else {
+        item.count -= 1;
+        modal_numb.innerHTML = item.count + "шт";
 
-        minus.onclick = () => {
-
-            if (item.count <= 0) {
-                item.count = 0
-            }else {
-                item.count -= 1
-                modal_numb.innerHTML = item.count + "шт"
-
-                let total_price = 0;
-                let allPriceNumb = document.querySelector(".all-price-number");
-
-                for (let i of basket.dish) {
-                    let t = i.count * i.price;
-                    total_price -= t;
-                    // console.log(i.price, i.count, i.count * i.price);
-                }
-
-                allPriceNumb.textContent = Math.abs(total_price) + "₽";
-            }
-
-
-           
-        }
-
- 
-     
-        total_price = 0
-        let t = 0
-        let allPriceNumb = document.querySelector(".all-price-number")
+        let total_price = 0;
+        let allPriceNumb = document.querySelector(".all-price-number");
 
         for (let i of basket.dish) {
-            t = (i.count * i.price)
-            total_price = t + total_price
+          let t = i.count * i.price;
+          total_price -= t;
+          // console.log(i.price, i.count, i.count * i.price);
         }
-        allPriceNumb.textContent = total_price + "₽"
 
-        item.count = 1
-        modal_numb.innerHTML = item.count + 0 + "шт"
+        allPriceNumb.textContent = Math.abs(total_price) + "₽";
+      }
+    };
 
+    total_price = 0;
+    let t = 0;
+    let allPriceNumb = document.querySelector(".all-price-number");
+
+    for (let i of basket.dish) {
+      t = i.count * i.price;
+      total_price = t + total_price;
     }
+    allPriceNumb.textContent = total_price + "₽";
 
-    //---ПРОВЕРКА НА ИДЕНЧИНОСТЬ
-    const fUBK = (arr,key) => {
-            const seen = new Set()
-            return arr.filter(item =>{
-                const isDublicate = seen.has(item[key])
-                seen.add(item[key])
-                return !isDublicate
-            })
-    }
-    const uniqueItems = fUBK(basket.dish, "name")
-    console.log(uniqueItems);
+    item.count = 1;
+    modal_numb.innerHTML = item.count + 0 + "шт";
+  }
 
-        
+  //---ПРОВЕРКА НА ИДЕНЧИНОСТЬ
+  const fUBK = (arr, key) => {
+    const seen = new Set();
+    return arr.filter((item) => {
+      const isDublicate = seen.has(item[key]);
+      seen.add(item[key]);
+      return !isDublicate;
+    });
+  };
+  const uniqueItems = fUBK(basket.dish, "name");
+
 }
 
-let total = document.querySelector(".total")
+let total = document.querySelector(".total");
 
-total.addEventListener( "click", () => {
-    window.location.href = `${window.location.origin}/pages/basket.html`
-    for(let item of basket.dish){
-        axios.post("http://localhost:3002/total_basket",
-        item)
-    }
-   
-})
+total.addEventListener("click", () => {
+  window.location.href = `${window.location.origin}/pages/basket.html`;
+  for (let item of basket.dish) {
+    axios.post("http://localhost:3002/total_basket", item);
+  }
+});
 
-let basketRend = function(){
-    if(typeof localStorage.getItem("basket") != null){
-        basket.dish = JSON.parse(localStorage.getItem("basket"))
-        console.log(basket.dish);
-    }else{
-        console.log("не раб");
-    }
-}
+let basketRend = function () {
+  if (typeof localStorage.getItem("basket") != null) {
+    basket.dish = JSON.parse(localStorage.getItem("basket"));
+    console.log(basket.dish);
+  } else {
+    console.log("не раб");
+  }
+};
 
-window.onload = function(){
-    let numb = basket.dish.length
-    numb = basket_counter.innerHTML
-}
+window.onload = function () {
+  let numb = basket.dish.length;
+  numb = basket_counter.innerHTML;
+};
 
+let aside = document.querySelector("aside");
 
-
-let aside = document.querySelector("aside")
-
-window.addEventListener("load", () =>{
-    console.log("123");
-    aside.classList.add("hide")
-    setTimeout(() => {
-        aside.remove()
-    }, 2000)
-})
-
-
-
+window.addEventListener("load", () => {
+  console.log("123");
+  aside.classList.add("hide");
+  setTimeout(() => {
+    aside.remove();
+  }, 2000);
+});
+console.log(id);
 //----
 
 // localStorage.setItem("category", "13")
@@ -607,7 +580,7 @@ window.addEventListener("load", () =>{
 //     {id: 4, name: "item 4", value: 400},
 //     {id: 5, name: "item 5", value: 500},
 // ];
- 
+
 // const fUBK = (arr,key) => {
 //     const seen = new Set()
 //     return arr.filter(item =>{
@@ -620,29 +593,26 @@ window.addEventListener("load", () =>{
 // const uniqueItems = fUBK(items, "name")
 // console.log(uniqueItems);
 
-
 //patch and get
 
 // btn.onclick = () => {
 //     axios.get("http://localhost:3002/dishes")
 //     .then(res =>{
 //         let data = res.data
- 
-//         console.log(data);
 
+//         console.log(data);
 
 //     })
 
 // }
 
-
 // secBtn.onclick = () =>{
 //     axios.get("http://localhost:3002/total_basket")
 //     .then(res => {
 //         let data = res.data
-    
+
 //         console.log(data);
-    
+
 //         axios.put("http://localhost:3002/dishes", data)
 //     })
 
