@@ -32,18 +32,73 @@
 //     axios.delete("http://localhost:3002/total_basket/{item.id}")
 // }
 
-axios.get("http://localhost:3002/total_basket")
+axios.get("http://localhost:3002/hot")
     .then(function (res) {
         let data = res.data
-        TotalBasket(data)
+        hotArrow(data)
         // ModalBasket(data)
     })
 
-let menuTotalBasket = document.querySelector(".menuTotalBasket")
 
-function TotalBasket(arr) {
-    // let obj = arr[0]
-    for (let item of arr) {
+let basket = {
+    allPrice: 0,
+    count: 1,
+    dish: [],
+  };
+//   localStorage.setItem("basket", JSON.stringify(basket.dish));
+  
+
+let hot_arrow = document.querySelector("#hot_arrow");
+let hot_arrow_box = document.querySelector(".hot_arrow_box");
+let first_hot_click = document.querySelector(".first_hot_click");
+let btnOrder = document.querySelector('.btnOrder')
+
+hot_arrow.onclick = () => {
+  hot_arrow_box.classList.toggle("hidden");
+};
+
+btnOrder.addEventListener("click", () => {
+  window.location.href = `/pages/orderRegistration.html`;
+});
+
+//назыание блюд в загаловке
+
+function hotArrow(arr) {
+  for (let item of arr) {
+    let a = document.createElement("a");
+    a.classList.add("a_of_black");
+    a.innerHTML = item.name;
+    hot_arrow_box.append(a);
+
+    a.addEventListener("click", () => {
+      window.location.href = `/pages/about_product.html?id=${item.id}`;
+    });
+  }
+}
+
+
+
+first_hot_click.onclick = () => {
+  hot_arrow_box.classList.toggle("hidden");
+};
+
+
+    
+  if (typeof localStorage.getItem("basket") === "string") {
+    basket.dish = JSON.parse(localStorage.getItem("basket"));
+  }
+
+  TotalBasket(basket.dish)
+
+  
+  
+  function TotalBasket(arr) {
+      // let obj = arr[0]
+      let menuTotalBasket = document.querySelector(".menuTotalBasket")
+      menuTotalBasket.innerHTML = ''; 
+      for (let item of arr) {
+        
+
         // console.log(obj);   
         // console.log(obj[item]);     
         let ParentItem = document.createElement('div')
@@ -103,9 +158,14 @@ function TotalBasket(arr) {
 
 
 
-        deleteItem.onclick = () =>{
-            axios.delete(`http://localhost:3002/total_basket/${item.id}`)
-            console.log(obj[item].id);
+          deleteItem.onclick = () => {
+           
+            localStorage.removeItem(item.id);
+            basket.dish = basket.dish.filter(basketItem => basketItem.id !== item.id);
+            
+            localStorage.setItem("basket", JSON.stringify(basket.dish));
+
+            TotalBasket(basket.dish);
         }
     }
 

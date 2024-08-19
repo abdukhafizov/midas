@@ -12,9 +12,32 @@ axios.get(`http://localhost:3002/dishes/${url_id}`).then(function (res) {
   abProd(data);
 });
 
+axios.get(`http://localhost:3002/hot/${url_id}`).then(function (res) {
+  let data = res.data;
+  console.log(data, typeof data);
+  abProd(data);
+});
+
+axios.get(`http://localhost:3002/khinkali/${url_id}`).then(function (res) {
+  let data = res.data;
+  console.log(data, typeof data);
+  abProd(data);
+});
+
+axios.get(`http://localhost:3002/deserts/${url_id}`).then(function (res) {
+  let data = res.data;
+  abProd(data);
+  // ModalBasket(data)
+});
+
 axios.get("http://localhost:3002/dishes").then(function (res) {
   let data = res.data;
   moreDishes(data);
+  // ModalBasket(data)
+});
+axios.get("http://localhost:3002/hot").then(function (res) {
+  let data = res.data;
+  hotArrow(data)
   // ModalBasket(data)
 });
 
@@ -23,14 +46,17 @@ let basket = {
   count: 1,
   dish: [],
 };
+
+
 let basket_counter = document.querySelector(".basket_counter");
 let about_product_slide = document.querySelector(".about_product_slide");
 //--------СОЗДАНИЕ ИНФОРМАЦИИ ОБ БЛЮДЕ
 function abProd(obj) {
   console.log(obj);
+  obj.count = 1
   let grids_of_aboutProduct_slide = document.createElement("div");
   let nameOfProduct = document.createElement("h4");
-  let tabs = document.createElement("p");
+  let tabs = document.createElement("a");
   let tab_active = document.createElement("span");
   let gridsOfAboutProductSlide = document.createElement("div");
   let leftAboutProduct = document.createElement("div");
@@ -55,6 +81,7 @@ function abProd(obj) {
   let basketImg = document.createElement("img");
   let descriptionTitle = document.createElement("p");
   let descriptionOfProduct = document.createElement("p");
+  let main = document.createElement("a");
 
   grids_of_aboutProduct_slide.classList.add("grids_of_aboutProduct_slide");
   tabs.classList.add("tabs");
@@ -86,6 +113,7 @@ function abProd(obj) {
   nameOfProduct.id = "nameOfProduct";
   descriptionOfProduct.id = "descriptionOfProduct";
 
+
   productImg.src = obj.bigImg;
   basketImg.src = "../img/basket.svg";
   nameOfProduct.innerHTML = obj.name;
@@ -95,15 +123,16 @@ function abProd(obj) {
   plus.innerHTML = "+";
   price.innerHTML = obj.price + "₽";
   descriptionOfProduct.innerHTML = obj.title;
-  tabs.innerHTML = "Главная /";
+  main.innerHTML = "Главная /";
   tab_active.innerHTML = "О продукте";
   descriptionTitle.innerHTML = "ОПИСАНИЕ:";
   abDish.innerHTML = obj.name;
   top_title_AbPr.innerHTML = "РАЗНОВИДНОСТЬ:";
+  main.style.cursor = "pointer";
 
   about_product_slide.append(nameOfProduct, tabs, gridsOfAboutProductSlide);
   gridsOfAboutProductSlide.append(leftAboutProduct, rightAboutProduct);
-  tabs.append(tab_active);
+  tabs.append(main, tab_active);
   leftAboutProduct.append(productImg, blockOfPoints);
   rightAboutProduct.append(modalBlocks, descriptionTitle, descriptionOfProduct);
   // modalBlocks.append(top_title_AbPr, modalBlock)
@@ -113,18 +142,31 @@ function abProd(obj) {
   center.append(minus, modal_numb, plus);
   priceWithBasket.append(price, basketImg);
 
+  main.addEventListener("click", () => {
+    window.location.href = `../index.html`;
+  });
+
+  plus.onclick = () => {
+    if (obj.count >= 19) {
+      obj.count = 1;
+      modal_numb.innerHTML = obj.count + "шт";
+    }
+
+    obj.count += 1;
+    modal_numb.innerHTML = obj.count + "шт";
+
+    price.innerHTML = obj.price * obj.count + "₽";
+  };
   minus.onclick = () => {
-    if (obj.count <= 0) {
-      obj.count = 0;
+    if (obj.count <= 1) {
+      obj.count = 19;
+      modal_numb.innerHTML = obj.count + "шт";
+      price.innerHTML = obj.price * obj.count + "₽";
     } else {
       obj.count -= 1;
       modal_numb.innerHTML = obj.count + "шт";
+      price.innerHTML = obj.price * obj.count + "₽";
     }
-  };
-
-  plus.onclick = () => {
-    obj.count += 1;
-    modal_numb.innerHTML = obj.count + "шт";
   };
 
   basketImg.onclick = () => {
@@ -147,90 +189,9 @@ function abProd(obj) {
   };
 
   let modal_blocks = document.querySelector(".modal_blocks");
-  //-----ВАРИАЦИИ БЛЮДА(ЕСЛИ ОНИ ЕСТЬ)
-  if (obj.Varieties) {
-    for (let item of obj.Varieties) {
-      let modal_block = document.createElement("div");
-      let titleWithWeight = document.createElement("span");
-      let ab_dish = document.createElement("p");
-      let weight = document.createElement("div");
-      let count = document.createElement("div");
-      let top_count_style = document.createElement("div");
-      let center = document.createElement("div");
-      let minus = document.createElement("span");
-      let modal_numb = document.createElement("span");
-      let plus = document.createElement("span");
-      let bottom_count_style = document.createElement("div");
-      let p_w_bs = document.createElement("span");
-      let price = document.createElement("p");
-      let basketImg = document.createElement("img");
+  //-----ВАРИАЦИИ БЛЮДА(25.07 они тут были)
 
-      modal_block.classList.add("modal_block");
-      titleWithWeight.classList.add("titleWithWeight");
-      ab_dish.classList.add("ab_dish");
-      weight.classList.add("weight");
-      count.classList.add("count");
-      top_count_style.classList.add("top_count_style");
-      center.classList.add("center");
-      minus.id = "minus";
-      modal_numb.id = "modal_numb";
-      plus.id = "plus";
-      modal_block.id = "AbMdBlock";
-      bottom_count_style.classList.add("bottom_count_style");
-      p_w_bs.classList.add("p_w_bs");
-      price.classList.add("price");
-
-      basketImg.src = "../img/basket.svg";
-      ab_dish.innerHTML = item.name;
-      weight.innerHTML = item.weight + "г";
-      price.innerHTML = item.price + "₽";
-      minus.innerHTML = "-";
-      modal_numb.innerHTML = item.count + "шт";
-      plus.innerHTML = "+";
-
-      modal_blocks.append(modal_block);
-      modal_block.append(titleWithWeight, count, p_w_bs);
-      titleWithWeight.append(ab_dish, weight);
-      count.append(top_count_style, center, bottom_count_style);
-      center.append(minus, modal_numb, plus);
-      p_w_bs.append(price, basketImg);
-
-      minus.onclick = () => {
-        if (item.count <= 0) {
-          item.count = 0;
-        } else {
-          item.count -= 1;
-          modal_numb.innerHTML = item.count + "шт";
-        }
-      };
-
-      plus.onclick = () => {
-        item.count += 1;
-        modal_numb.innerHTML = item.count + "шт";
-      };
-
-      basketImg.onclick = () => {
-        let num = +basket_counter.innerHTML;
-
-        basketImg.classList.toggle("star_active");
-        if (basketImg.classList.contains("star_active")) {
-          basket.dish.push(item);
-          ModalBasket(basket.dish, box_of_products_in_basket);
-          basket_counter.innerHTML = num + 1;
-          all_count_n.innerHTML = num + 1;
-          localStorage.setItem("basket", JSON.stringify(basket.dish));
-        } else {
-          basket_counter.innerHTML = num - 1;
-          all_count_n.innerHTML = num - 1;
-          basket.dish.splice(basket.dish.indexOf(item), 1);
-          ModalBasket(basket.dish, box_of_products_in_basket);
-          console.log(basket.dish);
-        }
-      };
-    }
-  } else {
-    modalBlocks.append(top_title_AbPr, modalBlock);
-  }
+  modalBlocks.append(top_title_AbPr, modalBlock);
 }
 
 //КОРЗИНА
@@ -315,9 +276,15 @@ function ModalBasket(arr, place) {
     center.append(minus, modal_numb, plus);
 
     plus.onclick = () => {
+      if (item.count >= 19) {
+        item.count = 0;
+        modal_numb.innerHTML = item.count + "шт";
+      }
       item.count += 1;
       modal_numb.innerHTML = item.count + "шт";
       total_price = 0;
+
+      price.innerHTML = item.price * item.count + "₽";
       let t = 0;
       let allPriceNumb = document.querySelector(".all-price-number");
 
@@ -325,18 +292,33 @@ function ModalBasket(arr, place) {
         t = i.count * i.price;
         total_price = t + total_price;
       }
+
       allPriceNumb.textContent = total_price + "₽";
     };
 
     minus.onclick = () => {
-      if (item.count <= 0) {
-        item.count = 0;
+      if (item.count <= 1) {
+        item.count = 19;
+        modal_numb.innerHTML = item.count + "шт";
+
+        let total_price = 0;
+        let allPriceNumb = document.querySelector(".all-price-number");
+        price.innerHTML = item.price * item.count + "₽";
+
+        for (let i of basket.dish) {
+          let t = i.count * i.price;
+          total_price -= t;
+          // console.log(i.price, i.count, i.count * i.price);
+        }
+
+        allPriceNumb.textContent = Math.abs(total_price) + "₽";
       } else {
         item.count -= 1;
         modal_numb.innerHTML = item.count + "шт";
 
         let total_price = 0;
         let allPriceNumb = document.querySelector(".all-price-number");
+        price.innerHTML = item.price * item.count + "₽";
 
         for (let i of basket.dish) {
           let t = i.count * i.price;
@@ -446,16 +428,62 @@ function moreDishes(arr) {
         ModalBasket(basket.dish, box_of_products_in_basket);
         // emptyShopper.classList.add("hidden")
         localStorage.setItem("basket", JSON.stringify(basket.dish));
+        sec_img.src = "../img/Inbasket.svg";
       } else {
         basket_counter.innerHTML = num - 1;
         all_count_n.innerHTML = num - 1;
         basket.dish.splice(basket.dish.indexOf(item), 1);
         ModalBasket(basket.dish, box_of_products_in_basket);
         // emptyShopper.classList.remove("hidden")
+        sec_img.src = "../img/basket.svg";
       }
     };
   }
 }
+
+basket_counter.classList.remove("hidden");
+
+let total = document.querySelector(".total");
+
+total.addEventListener("click", () => {
+  window.location.href = `${window.location.origin}/pages/basket.html`;
+  for (let item of basket.dish) {
+    axios.post("http://localhost:3002/total_basket", item);
+  }
+});
+
+let num = basket.dish.length;
+basket_counter.innerHTML = num;
+
+let first_hot_click = document.querySelector(".first_hot_click");
+
+let hot_arrow = document.querySelector("#hot_arrow");
+let hot_arrow_box = document.querySelector(".hot_arrow_box");
+
+hot_arrow.onclick = () => {
+  hot_arrow_box.classList.toggle("hidden");
+};
+
+//назыание блюд в загаловке
+
+function hotArrow(arr) {
+  for (let item of arr) {
+    let a = document.createElement("a");
+    a.classList.add("a_of_black");
+    a.innerHTML = item.name;
+    hot_arrow_box.append(a);
+
+    a.addEventListener("click", () => {
+      window.location.href = `/pages/about_product.html?id=${item.id}`;
+    });
+  }
+}
+
+first_hot_click.onclick = () => {
+  hot_arrow_box.classList.toggle("hidden");
+};
+
+
 
 // в отдельном файле создатбь 3 демо слайдера -
 // сделать сладйер внутри слайдера +

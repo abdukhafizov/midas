@@ -94,9 +94,9 @@
     {
       "id": "6",
       "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
-      "bigImg": "https://ferum55.ru/wp-content/uploads/2021/05/bifshteks-solsberi-s-fermerskim-kartofelem-.jpg",
+      "bigImg": "https://chef.ru/wp-content/uploads/view-delicious-meat-cutlets-baked-with-potatoes-tomatoes-black-plate-cutlery-set-white-flowers-spices-green-black-mixed-colors-background-1620x1080.jpg",
       "name": "Котлета с картофелем",
-      "title": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
+      "title": "Представляем вам аппетитную котлету с картофелем – идеальное блюдо для уютного семейного ужина или обеда. Сочные, румяные котлеты из отборного мясного фарша, обжаренные до золотистой корочки.",
       "weight": 350,
       "price": 520,
       "basket": false,
@@ -125,7 +125,7 @@
           "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
           "price": 125,
           "weight": 80,
-           "count": 0,
+          "count": 0,
           "id": 2
         }
       ]
@@ -164,7 +164,7 @@
           "menuImg": "../img/massiveDishes/MaskGroup.svg",
           "price": 125,
           "weight": 80,
-           "count": 0,
+          "count": 0,
           "id": 2
         }
       ]
@@ -219,7 +219,7 @@
       "basket": false,
       "status": false,
       "count": 0,
-      "category": "khinkali"
+      "category": "khachapuri"
     },
     {
       "id": "12",
@@ -232,7 +232,7 @@
       "basket": false,
       "status": true,
       "count": 0,
-      "category": "hot",
+      "category": "khachapuri",
       "Varieties": [
         {
           "name": "C доп. шпинатом",
@@ -255,7 +255,7 @@
           "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
           "price": 125,
           "weight": 80,
-           "count": 0,
+          "count": 0,
           "id": 2
         }
       ]
@@ -265,80 +265,80 @@
     {
       "id": "6",
       "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
-      "bigImg": "https://ferum55.ru/wp-content/uploads/2021/05/bifshteks-solsberi-s-fermerskim-kartofelem-.jpg",
+      "bigImg": "https://chef.ru/wp-content/uploads/view-delicious-meat-cutlets-baked-with-potatoes-tomatoes-black-plate-cutlery-set-white-flowers-spices-green-black-mixed-colors-background-1620x1080.jpg",
       "name": "Котлета с картофелем",
       "title": "По семейному рецепту: нежнейшее рубленное мясо с экологически чистыми ферме...",
       "weight": 350,
       "price": 520,
-      "basket": false,
+      "basket": true,
       "count": 0,
-      "status": true,
-      "category": "hot",
-      "Varieties": [
-        {
-          "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
-          "name": "C сыром",
-          "price": 125,
-          "weight": 80,
-          "count": 0,
-          "id": 0
-        },
-        {
-          "name": "Традиционные",
-          "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
-          "price": 115,
-          "weight": 80,
-          "count": 0,
-          "id": 1
-        },
-        {
-          "name": "Из баранины с тархуном",
-          "menuImg": "../img/massiveDishes/HamburgerPattyWithPotatoesInARusticWay.svg",
-          "price": 125,
-          "weight": 80,
-           "count": 0,
-          "id": 2
-        }
-      ]
+      "status": false,
+      "category": "hot"
     },
     {
-      "id": "12",
-      "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
-      "bigImg": "https://avatars.mds.yandex.net/get-altay/2378041/2a00000174c021caa6840d9e20a3e75442c4/XXL",
-      "name": "Хачапури со шпинатом",
-      "title": "Хачапури со шпинатом — это оригинальная вариация классического грузинского блюда, сочетающая в себе насыщенный вкус сыра и свежую зелень шпината. Внутри мягкой и ароматной лепёшки прячется аппетитная начинка из расплавленного сыра и нежного шпината, которая придает блюду легкость и утонченность. Хачапури со шпинатом станет отличным выбором как для сытного завтрака, так и для легкого обеда или ужина.",
-      "weight": 350,
-      "price": 520,
+      "id": "13",
+      "menuImg": "../img/massiveDishes/OjahuriTelatina.svg",
+      "bigImg": "https://kahuri.ru/wp-content/uploads/product/113/dsc_5195-Odzhahuri.jpg",
+      "name": "Оджахури из телятины",
+      "title": "Оджахури - классическое грузинское блюдо. По сути это мясо с картофелем – беспроигрышное сочетание. Для оджахури можно использовать разные виды мяса. Мы выбради нежную телятину. Одэахури подается традиционно на кеци (глиняной тарелке), чтобы блюдо дольше оставалось горячим.",
+      "weight": 430,
+      "price": 760,
       "basket": false,
-      "status": true,
+      "status": false,
       "count": 0,
-      "category": "hot",
-      "Varieties": [
-        {
-          "name": "C доп. шпинатом",
-          "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
-          "price": 125,
-          "weight": 80,
-          "count": 0,
-          "id": 0
-        },
-        {
-          "name": "Традиционные",
-          "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
-          "price": 115,
-          "weight": 80,
-          "count": 0,
-          "id": 1
-        },
-        {
-          "name": "С тархуном",
-          "menuImg": "../img/massiveDishes/MaskGroup-5.svg",
-          "price": 125,
-          "weight": 80,
-           "count": 0,
-          "id": 2
-        }
-      ]
+      "category": "hot"
+    },
+    {
+      "id": "14",
+      "menuImg": "../img/massiveDishes/MeatOfSalmon.svg",
+      "bigImg": "../img/salmon.svg",
+      "name": "Стейк из лосося с овощами",
+      "title": "Летом это вообще настоящая находка - легкое, малокалорийное, полезное блюдо, ведь лосось содержит только полезные белки и жиры, а овощи - полезные белки и углеводы.",
+      "weight": 430,
+      "price": 990,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "hot"
+    },
+    {
+      "id": "15",
+      "menuImg": "../img/massiveDishes/dolma.svg",
+      "bigImg": "https://cdn1.ozonusercontent.com/s3/club-storage/images/article_image_1632x1000/415/45157eec-4071-44d0-8793-6741e2665639.jpeg",
+      "name": "Долма со сметаной",
+      "title": "Позвольте вам представить долму – восхитительное блюдо, которое перенесет вас в атмосферу восточных кулинарных традиций. Нежные виноградные листья, аккуратно завернутые вокруг сочного мясного фарша с рисом и ароматными травами, создают неповторимую гармонию вкусов. Медленное тушение в пряном бульоне придает долме невероятную мягкость и насыщенный аромат.",
+      "weight": 350,
+      "price": 430,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "hot"
+    },
+    {
+      "id": "16",
+      "menuImg": "../img/massiveDishes/chihohbili.svg",
+      "bigImg": "https://myastoriya.com.ua/upload/resize_cache/iblock/1b5/1000_800_1/96v43puf8kx1oxux3w7q4279h9em38vs.jpg",
+      "name": "Чахохби́ли с курицей",
+      "title": "Чахохби́ли с курицей – это классическое грузинское блюдо, которое порадует вас своими насыщенными вкусами и ароматами. Нежные кусочки курицы, обжаренные до золотистой корочки, томятся в густом соусе из спелых томатов, лука, чеснока и свежих трав. ",
+      "weight": 350,
+      "price": 430,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "hot"
+    },
+    {
+      "id": "17",
+      "menuImg": "../img/massiveDishes/lobio.svg",
+      "bigImg": "https://dzen.ru/lz5XeGt8f/1UU1n1098/85c272H2m/wf8HRGYDcUdTm6QJNneUf8OVkSvdA6crIwACmXq1ApKGxcbVv9tVxrPI4IkJmeB-JYqodtY4KmPgvbubsXU8rojrXjVKbih-Mp70vC9WzAay4a0WiB-ncjoQd9lngXu2nvRu1L-aZIfanViNHZmcwo0G0aozzPOiOA0W18lsZM7Z67bQW-tNy4fjZGG3x6zD65H9s9Xjpq_jfRYR3lTy2gpdqkmTimSXetWBfIzs9IqVHkXKk-iPYgSRtqe1HIUeJYcOHfejkU9rhySBH-sgU0flmXcZi-aHA-2KXU4sctKG5aZJS-IIS4JJuQjQxLS2yer54ucYK5qwgXKn-dTlki0XBsX_4y0jQ98saaOHvF-DHWG7pS-O2-NRqsWuwFJaCknqAVPK2D-2MXmoAHx4st1CFZLrFAuCNHHq9wm8BX6Nl-Jtw7vFL2dD-JHv20Ab4wl9L5HzLhezlTaRwtyOklpt8iUbklTfqrW9dHj4EO6ptj1CF3jbLrBJSi-BsH2WRfcegUt7YS_f64DpM8fQP_t5iS_V--5XP4G6odK00h4qrQ6tG77cnwKZoQTMmNSeuc4Vhntotw6gvT5DLZxF7p0Dwp1LVzFPR5OwAbtvrIsXyXVfiXeqc9N97r32POpOjuFymQfiMIeyTenMhOhMLs2yAXKPvDMePIEWz5XoCZb5q0K9a5NRv2srxFknr5Rbm4mpu2EHbp9XbQptVrgiGh6lUg0HcgizJp3hHDBwxO6ZNgU6K7QDwrSxEptl_GEW3QOCmW9rZU_LU7jdb4M0T2OF9Y_5jzqzPx0uYX6g3mpymfbhF74k69rtOUCIGBAmlWZJQmdUE5aEnWITxcg94gHz7um_q70_gxOsbVeXqFOH8a0zJWu6i1cdqlHmJF5yBr0K-U-eKLNS4ZHUbBx49snGwZZL7A8qsE1uV4101UKBt8YFM5dNU8MPlBVr7-xDTxH9x6GPujO_AWrdBize8q5FAkkPxuxrTtW5LHjofBLpll3Kr3z7zpDJ7sthIE2Sla_inRN3Wdfz2xBZawPYxw_5GdOtX47T2_Uy0YY4gs4mnVJVR_Z0s9oVQXzcsMya3daVcveoE150YT6fqWBRXkmXes3fJ3HbZ-9s0c9LnNfLxamDecMaywtd9s3acC6S0uUGcRtiqCe2GQlMxLi8GinW4Q77JPvKjAGaW_3ElZ75L4adU3Mxo_vnxGm3k7RLX4Edq01biis_Cd7NVmAaLtbN5smr5nw_wrll6DzgiHZlot0CVzALEjyxOoe1KJ0mxVtCNbsH2Vv_x8jp74cAE8ttIQPdI24b10mG5ap0bipGGb6RK_KwM0aZ6SzEMPA2KRLhtvssX0Zo_Z6fiaxlHg0Pnp2zs_FLw6ucDSMvSC_TDZknSecat3OBHmVCDAJWhilinSOeWE8mHelcwNDEdmkOkeKPNLcyqEFyy73chUI92xbJP_dlN28v6PWzx8yvG51hq0n7kpsLDRKtdlw6ol493vFDQrQ74m2ZHIC4lLYRhr26E2SLRojJZo-lLAnyMZdStZ_rsRPv-xQV92PQK99tuc9pm2J7y2Gird447sLyRZpRww6IX0oRDYQwkAhy3Y41quv4b86MwQ6TgTA1vg2bHv2_O92rn2scbWODoEM3-X13beeaX0uVurVCdJLiHjE-gS_2LJfuFWGg0FCYDtVmGaZf_Lc2RC3KV_UkQc4Jk_p9yxfdl_crkN0bnwyDl_0pc3GbKq_zQd5tarBurp7d9vHT-nQTIm018AxAkH7VovWyF5T_RmS96pPFoB3aWWfGle972SfLf-yJG5O4n4eBYb_l17YPL32uUY5Aak66MYKBJ9qgN2LpjXyIxOiOmVLpDpcoUzJ0QQaLwTjN0tFzjrGHm-l3l_eAUS8rpNs_oZ2XIdcmX0P9Wo2-7GLy2umKfSfypFeOVTnogDhY-rVO2TIH2N_uEE2a-4EolaKtD26Zzx9Jy0tfgGFY",
+      "name": "Лобио по-имеретински",
+      "title": "Лобио по-имеретински – это традиционное грузинское блюдо, которое порадует вас своим насыщенным вкусом и богатым ароматом. Нежные красные фасоли, медленно томящиеся с луком и чесноком, соединяются с ароматными специями и свежей зеленью, создавая гармоничный букет вкусов. ",
+      "weight": 300,
+      "price": 408,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "hot"
     }
   ],
   "khinkali": [
@@ -406,71 +406,6 @@
       "status": false,
       "count": 0,
       "category": "khinkali"
-    },
-    {
-      "id": "4",
-      "menuImg": "../img/massiveDishes/Low-calorieLunchWithYogurt.svg",
-      "bigImg": "https://recfood.ru/wp-content/uploads/2019/12/cezar-salat-e1508495161510.jpg",
-      "name": "Ланч низко-калорийный",
-      "title": "Греческий йогурт с ягодами, 3 хинкали традиционных, салат цезарь, пирожки с уткой, морс",
-      "weight": 450,
-      "price": 1148,
-      "basket": false,
-      "status": false,
-      "count": 0,
-      "category": "salad"
-    },
-    {
-      "id": "5",
-      "menuImg": "../img/massiveDishes/KhachapuriInMegrelian.svg",
-      "bigImg": "https://static.tildacdn.com/stor3731-3961-4665-b935-656633623433/61727786.jpg",
-      "name": "Чебуреки",
-      "title": "Чебуреки — это популярное блюдо восточной кухни, представляющее собой хрустящие жареные пирожки с сочной мясной начинкой. Тонкое тесто, обжаренное до золотистой корочки, скрывает внутри ароматный и нежный фарш из говядины, свинины или баранины с добавлением специй и лука. Чебуреки идеально подходят для сытного перекуса или основного блюда, радующего насыщенным вкусом и аппетитным видом.",
-      "weight": 430,
-      "price": 490,
-      "basket": false,
-      "count": 0,
-      "status": false,
-      "category": "khinkali"
-    },
-    {
-      "id": "8",
-      "menuImg": "../img/massiveDishes/MaskGroup-1.svg",
-      "bigImg": "https://static3.bigstockphoto.com/5/0/3/large1500/305386915.jpg",
-      "name": "Пирожки с курицей",
-      "title": "Предлагаем вам оригинальные сытные пирожки с курицей и моцареллой. Чудесный аромат свежей выпечки, тягучий сыр и мягкое тесто —невероятно вкусно.",
-      "weight": 350,
-      "price": 495,
-      "basket": false,
-      "status": false,
-      "count": 0,
-      "category": "khinkali"
-    },
-    {
-      "id": "9",
-      "menuImg": "../img/massiveDishes/MaskGroup-2.svg",
-      "bigImg": "https://static.tildacdn.com/stor3262-3962-4836-a164-396131333435/87532754.jpg",
-      "name": "Рулетики из лосося",
-      "title": "Рулет из лосося — это изысканное блюдо, представляющее собой нежные ломтики свежего лосося, свернутые в аккуратные рулетики. Внутри каждого рулета может находиться разнообразная начинка, такая как сливочный сыр, свежие овощи или ароматные травы, что придает блюду особый вкус и утонченность. Идеально подходит как для праздничного стола, так и для романтического ужина.",
-      "weight": 350,
-      "price": 520,
-      "basket": false,
-      "status": false,
-      "count": 0,
-      "category": "khinkali"
-    },
-    {
-      "id": "11",
-      "menuImg": "../img/massiveDishes/KhachapuriInAdjarian.svg",
-      "bigImg": "https://avatars.mds.yandex.net/get-eda/3798638/d7d37e24d7554dcea1be109cbadbd83f/1440x1082",
-      "name": "Хачапури по-мегрельски",
-      "title": "Менгельские хачапури — это разновидность традиционного грузинского хачапури, представляющая собой небольшие пирожки с сырной начинкой. Эти миниатюрные лепёшки из нежного теста наполняются расплавленным сыром и запекаются до золотистой корочки. Менгельские хачапури идеально подходят для закуски или перекуса, радуя своим насыщенным вкусом и ароматом.",
-      "weight": 430,
-      "price": 490,
-      "basket": false,
-      "status": false,
-      "count": 0,
-      "category": "khinkali"
     }
   ],
   "total_basket": [
@@ -482,6 +417,45 @@
       "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
       "weight": 350,
       "price": 1000,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "khinkali"
+    },
+    {
+      "id": "3",
+      "menuImg": "../img/massiveDishes/FriedKhinkali.svg",
+      "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
+      "name": "Хинкали жаренные (6шт)",
+      "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "khinkali"
+    },
+    {
+      "id": "2",
+      "menuImg": "../img/massiveDishes/traditional.svg",
+      "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
+      "name": "Хинкали традиционные",
+      "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 1000,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "khinkali"
+    },
+    {
+      "id": "3",
+      "menuImg": "../img/massiveDishes/FriedKhinkali.svg",
+      "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
+      "name": "Хинкали жаренные (6шт)",
+      "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 520,
       "basket": false,
       "status": false,
       "count": 1,
@@ -512,6 +486,207 @@
       "count": 1,
       "status": false,
       "category": "khinkali"
+    },
+    {
+      "id": "8",
+      "menuImg": "../img/massiveDishes/MaskGroup-1.svg",
+      "bigImg": "https://static3.bigstockphoto.com/5/0/3/large1500/305386915.jpg",
+      "name": "Пирожки с курицей",
+      "title": "Предлагаем вам оригинальные сытные пирожки с курицей и моцареллой. Чудесный аромат свежей выпечки, тягучий сыр и мягкое тесто —невероятно вкусно.",
+      "weight": 350,
+      "price": 495,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "khinkali"
+    },
+    {
+      "id": "9",
+      "menuImg": "../img/massiveDishes/MaskGroup-2.svg",
+      "bigImg": "https://static.tildacdn.com/stor3262-3962-4836-a164-396131333435/87532754.jpg",
+      "name": "Рулетики из лосося",
+      "title": "Рулет из лосося — это изысканное блюдо, представляющее собой нежные ломтики свежего лосося, свернутые в аккуратные рулетики. Внутри каждого рулета может находиться разнообразная начинка, такая как сливочный сыр, свежие овощи или ароматные травы, что придает блюду особый вкус и утонченность. Идеально подходит как для праздничного стола, так и для романтического ужина.",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "khinkali"
+    },
+    {
+      "id": "10",
+      "menuImg": "../img/massiveDishes/MaskGroup-3.svg",
+      "bigImg": "https://static.tildacdn.com/tild3062-3235-4232-b133-346333636566/DSC_3923_1.jpg",
+      "name": "Осетинские пироги",
+      "title": "Традиционное блюдо осетинской кухни в виде плоских пирогов с различными видами несладких начинок. Имеет круглую форму диаметром 30-40 см и толщину в 2 см. В традиционной культуре осетин пироги с основным видом начинок являются культовым блюдом, имея определённое ритуальное значение.",
+      "weight": 450,
+      "price": 1148,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "salad"
+    },
+    {
+      "id": "8",
+      "menuImg": "../img/massiveDishes/MaskGroup-1.svg",
+      "bigImg": "https://static3.bigstockphoto.com/5/0/3/large1500/305386915.jpg",
+      "name": "Пирожки с курицей",
+      "title": "Предлагаем вам оригинальные сытные пирожки с курицей и моцареллой. Чудесный аромат свежей выпечки, тягучий сыр и мягкое тесто —невероятно вкусно.",
+      "weight": 350,
+      "price": 495,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "khinkali"
+    },
+    {
+      "id": "15",
+      "menuImg": "../img/massiveDishes/dolma.svg",
+      "bigImg": "https://cdn1.ozonusercontent.com/s3/club-storage/images/article_image_1632x1000/415/45157eec-4071-44d0-8793-6741e2665639.jpeg",
+      "name": "Долма со сметаной",
+      "title": "Позвольте вам представить долму – восхитительное блюдо, которое перенесет вас в атмосферу восточных кулинарных традиций. Нежные виноградные листья, аккуратно завернутые вокруг сочного мясного фарша с рисом и ароматными травами, создают неповторимую гармонию вкусов. Медленное тушение в пряном бульоне придает долме невероятную мягкость и насыщенный аромат.",
+      "weight": 350,
+      "price": 430,
+      "basket": false,
+      "status": false,
+      "count": 19,
+      "category": "hot"
+    },
+    {
+      "id": "18",
+      "menuImg": "../img/massiveDishes/tiramisu.svg",
+      "bigImg": "https://www.chefmarket.ru/blog/wp-content/uploads/2020/07/tiramisu-on-the-plate-2000x1200.jpg",
+      "name": "Тирамису",
+      "title": "Тирамису — итальянский десерт, который покоряет сердца своим нежным вкусом и изысканным сочетанием ингредиентов. Это многослойное лакомство состоит из пропитанных эспрессо и ликером савоярди, покрытых кремом из маскарпоне и яиц, и посыпанных какао. Каждый кусочек тирамису дарит ощущение легкости и одновременно насыщенности вкуса, делая его идеальным завершением любой трапезы.",
+      "weight": 300,
+      "price": 1200,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "desert"
+    },
+    {
+      "id": "1",
+      "menuImg": "../img/massiveDishes/khachapuri.svg",
+      "bigImg": "https://cdn.tasteatlas.com/images/dishes/3d92f77889fa49fe9e3ca4c761109e86.jpg?m=facebook",
+      "name": "Khachapuri in Adjarian",
+      "title": "Хачапури 'Лодочка' с начинкой из расплавленного сыра сулугуни, яйца и масла.",
+      "weight": 430,
+      "price": 470,
+      "basket": false,
+      "status": true,
+      "category": "khinkali",
+      "count": 1,
+      "Varieties": [
+        {
+          "name": "C сыром",
+          "menuImg": "../img/massiveDishes/khachapuri.svg",
+          "price": 125,
+          "weight": 80,
+          "count": 0,
+          "id": 0
+        },
+        {
+          "name": "Традиционные",
+          "menuImg": "../img/massiveDishes/khachapuri.svg",
+          "price": 115,
+          "weight": 80,
+          "count": 0,
+          "id": 1
+        },
+        {
+          "name": "Из баранины с тархуном",
+          "menuImg": "../img/massiveDishes/khachapuri.svg",
+          "price": 125,
+          "weight": 80,
+          "count": 0,
+          "id": 2
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "menuImg": "../img/massiveDishes/traditional.svg",
+      "bigImg": "https://static.tildacdn.com/tild6566-3438-4664-b134-373166353832/___10.png",
+      "name": "Хинкали традиционные",
+      "title": "Пряные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 1000,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "khinkali"
+    },
+    {
+      "id": "3",
+      "menuImg": "../img/massiveDishes/FriedKhinkali.svg",
+      "bigImg": "https://media-cdn.tripadvisor.com/media/photo-s/1b/ed/cc/e6/caption.jpg",
+      "name": "Хинкали жаренные (6шт)",
+      "title": "Пряные жаренные хинкали с начинкой из ароматной баранины со специями.",
+      "weight": 350,
+      "price": 520,
+      "basket": false,
+      "status": false,
+      "count": 1,
+      "category": "khinkali"
+    }
+  ],
+  "deserts": [
+    {
+      "id": "18",
+      "menuImg": "../img/massiveDishes/tiramisu.svg",
+      "bigImg": "https://www.chefmarket.ru/blog/wp-content/uploads/2020/07/tiramisu-on-the-plate-2000x1200.jpg",
+      "name": "Тирамису",
+      "title": "Тирамису — итальянский десерт, который покоряет сердца своим нежным вкусом и изысканным сочетанием ингредиентов. Это многослойное лакомство состоит из пропитанных эспрессо и ликером савоярди, покрытых кремом из маскарпоне и яиц, и посыпанных какао. Каждый кусочек тирамису дарит ощущение легкости и одновременно насыщенности вкуса, делая его идеальным завершением любой трапезы.",
+      "weight": 300,
+      "price": 1200,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "desert"
+    },
+    {
+      "id": "19",
+      "menuImg": "../img/massiveDishes/shtrudel.svg",
+      "bigImg": "../img/massiveDishes/bigimgshtrudel.jpeg",
+      "name": "Штрудель",
+      "title": "Штрудель — это традиционный австрийский десерт, который представляет собой тонко раскатанное тесто, наполненное сладкой начинкой. Классический яблочный штрудель, наиболее известный вариант, содержит сочные яблоки, смешанные с корицей, сахаром, изюмом и иногда орехами. Начинка оборачивается в слои теста, которые при выпечке становятся хрустящими и золотистыми. Подается штрудель обычно теплым, часто с шариком ванильного мороженого или взбитыми сливками, создавая неповторимое сочетание текстур и вкусов.",
+      "weight": 300,
+      "price": 1200,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "desert"
+    },
+    {
+      "id": "20",
+      "menuImg": "../img/massiveDishes/fruitcake.svg",
+      "bigImg": "https://img.freepik.com/free-photo/top-view-little-delicious-cake-with-cream-inside-plate-with-fresh-strawberries-kiwis-dark-background-cookie-biscuit-cake-fruit_140725-22873.jpg?t=st=1722247219~exp=1722250819~hmac=9bb2161f4c8cf86946453387cf9a701ff15809893bdfc3c6b36ed883e46b2650&w=2000",
+      "name": "ирог с фруктами",
+      "title": "Идеальный десерт для тех, кто любит сочетание сладкого и кислого в каждой ложке. Подходит как для уютного домашнего чаепития, так и для праздничного стола. Подается теплым или комнатной температуры, с ложкой взбитых сливок.",
+      "weight": 230,
+      "price": 850,
+      "basket": false,
+      "status": false,
+      "count": 0,
+      "category": "desert"
+    }
+  ],
+  "feedbacks": [
+    {
+      "id": "e88b",
+      "bio": ";oifpqwiejpqwejpqwe",
+      "email": "dadass@sdsdd.gmail.com"
+    },
+    {
+      "id": "dc13",
+      "bio": "ojfnoqweef",
+      "email": "dadass@sdsdd.gmail.com"
+    },
+    {
+      "id": "51ae",
+      "bio": "еда не вкусная",
+      "email": "weljnieqwie@gmail.com"
     }
   ]
 }

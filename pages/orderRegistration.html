@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIDAS</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="shortcut icon" href="../img/short_logo.svg" />
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="ab_header">
+                <a href="../index.html">
+                    <div class="logo"></div>
+                </a>
+                <div class="center">
+                    <a href="#">🔥 Акции</a>
+                    <span>
+                        <label class="first_hot_click" for="hot">Горячее</label>
+                        <img src="../img/arrow.svg" id="hot_arrow" alt="">
+                        <div class="hot_arrow_box hidden">
+
+                        </div>
+                    </span>
+                    <span>
+                        <label for="cold">Холодное</label>
+                        <img src="../img/arrow.svg" alt="">
+                        <!-- <select id="cold"></select> -->
+                    </span>
+
+                    <a href="#">Свежая выпечка</a>
+                    <a href="#">Десерты</a>
+                    <a href="#">Напитки</a>
+                </div>
+                <div class="right">
+                    <a href="#">Правила возврата</a>
+
+                    <a href="#">
+                        <img src="../img/acc.svg" alt="">
+                    </a>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-content">
+        <div class="container">
+            <h5>Оформление заказа</h5>
+
+            <div class="content-wrapper">
+                <div class="steps-block">
+                    <form name="order-reg">
+
+                        <div class="first-step">
+                            <p class="step-title">01. Контактные данные</p>
+                            <div class="line"></div>
+                            <div class="contact-data-flex step">
+                                <div>
+                                    <label for="name">Имя:</label>
+                                    <input type="text" id="name" name="name">
+                                </div>
+                                <div>
+
+                                    <label for="tel">Телефон:</label>
+                                    <input type="tel" id="tel" name="tel" value="+998">
+                                </div>
+                                <div>
+
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="second-step">
+                            <p class="step-title"> 02. Способ доставки</p>
+                            <div class="del-line"></div>
+
+                            <div class="delivery-items">
+                                <div class="del-item delivery-active">
+                                    <p class="del-item-title">Бесконтактная доставка <span class="price"> 300 ₽</span>
+                                    </p>
+
+
+                                    <p class="del-item-subtitle">
+                                        Доставка по Москве в пределах МКАД Осуществляется: ежедневно с 12:00 до 00:00,
+                                        Диапозон времени: от 1 до 1.5 часов
+                                    </p>
+
+                                </div>
+
+                                <div class="del-item">
+                                    <p class="del-item-title">Самовывоз <span class="price"> +0 ₽</span>
+                                    </p>
+
+
+                                    <p class="del-item-subtitle">
+                                        Доступен с 12:00 до 00:00 По адресу <a
+                                            href="https://maps.app.goo.gl/M95B3HW21SfcxnHd6">
+
+                                            ул. Улофа Пальме 5с2
+                                        </a>
+                                    </p>
+
+                                </div>
+                            </div>
+                            <div class="contact-data-flex step">
+                                <p id="address-of-deliver">Адрес доставки</p>
+                                <div>
+                                    <label for="street">Улица:</label>
+                                    <input type="text" id="street" name="street">
+                                </div>
+                                <div>
+
+                                    <label for="house">Дом:</label>
+                                    <input type="number" id="house" name="house">
+
+
+                                    <label for="apartment" id="ap-txt">Квартира:</label>
+                                    <input type="number" id="apartment" name="apartment">
+                                </div>
+
+                                <div>
+
+                                    <label for="bio">Комментарий к заказу:</label>
+                                    <textarea id="comOfDel" name="bio" rows="10" cols="30"></textarea>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="third-step">
+                            <p class="step-title">03. Оплата</p>
+                            <div class="del-line"></div>
+                            <div class="payment-data">
+                                <div class="payment-item">
+                                    <label for="cards">
+                                        <input type="radio" id="cards" name="payment" value="cards" class="real-ratio">
+                                        <span class="custom-ratio"></span>
+                                        Банковские карты / Электронные деньги / Другое
+                                    </label>
+                                </div>
+                                <div class="payment-item">
+                                    <label for="Cash-courier">
+                                        <input type="radio" id="Cash-courier" name="payment" value="Cash-courier"
+                                            class="real-ratio">
+                                        <span class="custom-ratio"></span>
+                                        Наличными курьеру
+                                    </label>
+                                </div>
+                                <div class="payment-item">
+                                    <label for="card-courier">
+                                        <input type="radio" id="card-courier" name="payment" value="card-courier"
+                                            class="real-ratio">
+                                        <span class="custom-ratio"></span>
+                                        Картой курьеру
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="sub" type="submit">Подтвердить заказ</button>
+                    </form>
+                </div>
+                <div class="about_total_submit">
+                    <div class="block__order-info">
+                        
+                    </div>
+                    <div class="total_sub_block">
+                        <p class="total-price-p">Общая цена:</p>
+                        <p class="all-total-price-number">0</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="container">
+            <div class="ab_footer">
+
+                <div class="top">
+                    <div class="left_of_top">
+                        <img src="../img/Logo.svg" alt="">
+                        <a href="#">Обратная связь</a>
+                        <a href="#">Доставка</a>
+                        <a href="#">Оплата</a>
+                        <a href="#">Контакты</a>
+                    </div>
+                    <div class="right_of_top">
+                        <a href="tel:+74998416729" id="top_numb">+7 (499) 841-67-29</a> <br>
+                        <a href="mailto:delivery@midas.rest">delivery@midas.rest</a>
+                    </div>
+                </div>
+                <div class="line"></div>
+                <div class="bottom">
+                    <div class="left_of_bottom">
+                        <p class="bottom_txt">
+                            © 2009–2019, ООО «MIDAS», официальный сайт
+                        </p>
+                    </div>
+                    <div class="right_of_bottom">
+                        <a href="#">Политика конфиденциальности и оферта</a>
+                        <a href="#">Пользовательское соглашение</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="parent_basket_modal">
+        <section class="basket_modal">
+            <!-- <div class="container"> -->
+            <div class="head_of_basket">
+                <span id="close_basket">✖</span>
+                <h5>Корзина</h5>
+            </div>
+            <div class="about_basket_modal">
+                <!-- -------------- -->
+                <div class="box_of_products_in_basket">
+
+
+                    <h6 id="emptyShopper">Ваша корзина пуста :( </h6>
+                </div>
+                <!-- ------- -->
+
+                <div class="totalBlock">
+                    <div class="count-price">
+                        <div class="all-count">
+                            <p class="all-count-p">Всего блюд:</p>
+                            <p class="all-count-number">0</p>
+                        </div>
+                        <div class="all-price">
+                            <p class="all-price-p">Общая цена:</p>
+                            <p class="all-price-number">0</p>
+                        </div>
+                    </div>
+                    <button class="total">Заказать</button>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../script/orderRegistration.js"></script>
+</body>
+
+</html>

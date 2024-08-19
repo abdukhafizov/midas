@@ -21,14 +21,14 @@
                     <a href="#">🔥 Акции</a>
                     <span>
                         <label class="first_hot_click" for="hot">Горячее</label>
-                        <img src="./img/arrow.svg" id="hot_arrow" alt="">
+                        <img src="../img/arrow.svg" id="hot_arrow" alt="">
                         <div class="hot_arrow_box hidden">
 
                         </div>
                     </span>
                     <span>
                         <label for="cold">Холодное</label>
-                        <img src="./img/arrow.svg" alt="">
+                        <img src="../img/arrow.svg" alt="">
                         <!-- <select id="cold"></select> -->
                     </span>
 
@@ -43,9 +43,6 @@
                     <a href="#">
                         <img src="../img/acc.svg" alt="">
                     </a>
-                    <a href="#">
-                        <img src="../img/shoper.svg" alt="">
-                    </a>
                     <div class="basket_counter hidden">0</div>
                 </div>
             </div>
@@ -56,7 +53,7 @@
         <div class="container">
             <div class="boxes_of_hot_dished_slide">
                 <h4>Корзина</h4>
-                <p class="tabs">Главная / <span id="tab_active">Корзина</span> </p>
+                <p class="tabs"> <a href="../index.html">Главная</a> / <span id="tab_active">Корзина</span> </p>
                 <!-- <div class="dishesOfBasket">
                     <button class="btn">click</button>
                     <button class="secBtn">clock</button>
@@ -94,6 +91,13 @@
         </div>
     </section>
 
+    <section class="toOrder">
+            <div id="total">
+                <p class="totaltxt">Итого к оплате:</p>
+                <p class="Orderprice">2 580 ₽</p>
+            </div>
+            <button class="btnOrder">Оформить заказ</button>
+    </section>
 
     <footer>
         <div class="container">
@@ -101,7 +105,7 @@
 
                 <div class="top">
                     <div class="left_of_top">
-                        <img src="./img/Logo.svg" alt="">
+                        <img src="../img/Logo.svg" alt="">
                         <a href="#">Обратная связь</a>
                         <a href="#">Доставка</a>
                         <a href="#">Оплата</a>

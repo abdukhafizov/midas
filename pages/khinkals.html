@@ -21,14 +21,14 @@
                     <a href="#">🔥 Акции</a>
                     <span>
                         <label class="first_hot_click" for="hot">Горячее</label>
-                        <img src="./img/arrow.svg" id="hot_arrow" alt="">
+                        <img src="../img/arrow.svg" id="hot_arrow" alt="">
                         <div class="hot_arrow_box hidden">
 
                         </div>
                     </span>
                     <span>
                         <label for="cold">Холодное</label>
-                        <img src="./img/arrow.svg" alt="">
+                        <img src="../img/arrow.svg" alt="">
                         <!-- <select id="cold"></select> -->
                     </span>
 
@@ -43,7 +43,7 @@
                     <a href="#">
                         <img src="../img/acc.svg" alt="">
                     </a>
-                    <a href="#">
+                    <a href="#" id="basketLink">
                         <img src="../img/shoper.svg" alt="">
                     </a>
                     <div class="basket_counter hidden">0</div>
@@ -104,7 +104,44 @@
         </div>
     </footer>
 
+
+    <div class="parent_basket_modal">
+        <section class="basket_modal">
+            <!-- <div class="container"> -->
+            <div class="head_of_basket">
+                <span id="close_basket">✖</span>
+                <h5>Корзина</h5>
+            </div>
+            <div class="about_basket_modal">
+                <!-- -------------- -->
+                <div class="box_of_products_in_basket">
+                  
+
+                    <h6 id="emptyShopper">Ваша корзина пуста :( </h6>
+                </div>
+                <!-- ------- -->
+
+                <div class="totalBlock">
+                    <div class="count-price">
+                        <div class="all-count">
+                            <p class="all-count-p">Всего блюд:</p>
+                            <p class="all-count-number">0</p>
+                        </div>
+                        <div class="all-price">
+                            <p class="all-price-p">Общая цена:</p>
+                            <p class="all-price-number">0</p>
+                        </div>
+                    </div>
+                    <button class="total">Заказать</button>
+                </div>
+                <!-- </div> -->
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="../script/khinkals.js"></script>
+
 </body>
 
 </html>
